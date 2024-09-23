@@ -216,7 +216,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Anubhav Tripathi - ak2341776@gmail.com
+Anubhav Tripathi - anubhavtripathi0509@gmail.com
 
 Project Link - [https://github.com/anubhavtripathi0509/Portfolio_new](https://github.com/anubhavtripathi0509/Portfolio_new)
 
