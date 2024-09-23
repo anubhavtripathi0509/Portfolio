@@ -252,5 +252,3 @@ Project Link - [https://github.com/anubhavtripathi0509/Portfolio_new](https://gi
 [license-url]: https://github.com/anubhavtripathi0509/Portfolio_new/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/anubhav-tripathi-bb8781246/
-
-
