@@ -37,6 +37,7 @@
     "postcss": "^8.4.6",
     "prettier": "3.3.3",
     "tailwindcss": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.12",
     "vite": "^5.0.8"
   }
 }
