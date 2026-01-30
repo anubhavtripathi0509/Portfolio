@@ -164,37 +164,30 @@ export const education = [
 
 export const experiance = [
   {
-    title: "Freelancer",
-    date: "Jan 2024 - Aug 2025",
-    empolyer: "Self-Employed",
+    title: "AI Engineer",
+    date: "Feb 2025 – Present",
+    empolyer: "Nimap Infotech (Client Deployment – UAE)",
     icon: experianceIcon,
     iconBg: "#00c6ff",
     points: [
-      "Engaged in freelancing for various clients, crafting creative solutions tailored to their requirements",
-      "Specializes in multi-domain software development.",
-      "Completed two distinct projects to date.",
+      "Worked as a client-facing AI Engineer delivering LLM-powered systems for UAE government, US healthcare, and enterprise clients.",
+      "Built domain-specific expert LLMs using Supervised Fine-Tuning (SFT) with PEFT (LoRA) for high-precision task execution.",
+      "Designed and implemented RAG-based information retrieval systems using embeddings and vector databases.",
+      "Developed tool-augmented and agentic LLM workflows with controlled outputs and production reliability.",
+      "Integrated and deployed LLM inference APIs with a focus on real-world constraints and scalability.",
     ],
   },
   {
-    title: "Product Engineer",
-    date: "Aug 2023 - Present",
-    empolyer: "NetraX Healthcare",
-    icon: experianceIcon,
-    iconBg: "#00c6ff",
-    points: [
-      "Led a team of 4 individuals in designing and developing a Fundus AI Device, aimed at assisting ophthalmologists in diagnosing retinal conditions with enhanced accuracy.",
-      "Coordinated efforts in integrating AI algorithms with hardware, ensuring seamless performance and user-friendly interfaces for real-time analysis in clinical settings.",
-    ],
-  },
-  {
-    title: "Software Engineer Intern",
-    date: "Dec 2023 - Feb 2024",
+    title: "Software Engineer (Contract)",
+    date: "Sep 2024 – Jan 2025",
     empolyer: "SoftDigits",
     icon: experianceIcon,
     iconBg: "#00c6ff",
     points: [
-      "Contributed to the development of a GAN-based authentication system, leveraging generative adversarial networks to enhance security measures for user verification.",
-      "Collaborated with senior engineers to implement machine learning models, optimizing the system's accuracy and efficiency in detecting potential security threats.",
+      "Developed and trained a GAN-based image authentication model using PyTorch for AI-driven security verification.",
+      "Optimized model performance to improve authentication accuracy and robustness against spoofing attempts.",
+      "Deployed the trained model as a REST API, enabling seamless integration with external client applications.",
+      "Collaborated with cross-functional teams to align model outputs with production requirements.",
     ],
   },
 ];
