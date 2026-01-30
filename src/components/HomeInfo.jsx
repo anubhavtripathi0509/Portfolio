@@ -9,7 +9,6 @@ const domain = ["Web", "Desktop", "Machine", "Serverless"];
 const suffix = [
   "Development",
   "Development",
-  "Development",
   "Learning",
   "Computing",
 ];
@@ -68,7 +67,7 @@ const HomeInfo = () => {
       </div>
       <div className="mt-5 font-semibold text-2xl lg:text-4xl text-red-600">
         <span>
-          Currently a final year Computer Engineering student from India.
+          AI Engineer with experience delivering LLM-powered systems for enterprise and government use cases.
         </span>
       </div>
       <div className="mt-5">
