@@ -4,14 +4,20 @@ import { NavLink, Link } from "react-router-dom";
 import HireButton from "./HireButton";
 import { socialLinks } from "../constants";
 
-const domain = ["Web", "Desktop", "Machine", "Serverless"];
+const domain = [
+  "Applied AI",
+  "LLM",
+  "Model",
+  "Agentic AI",
+];
 
 const suffix = [
-  "Development",
-  "Development",
-  "Learning",
-  "Computing",
+  "Engineering",
+  "Fine-Tuning",
+  "Training",
+  "Systems",
 ];
+
 
 const HomeInfo = () => {
   const [index, setIndex] = React.useState(0);
