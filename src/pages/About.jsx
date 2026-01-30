@@ -52,11 +52,12 @@ class About extends React.Component {
               </span>
             </h1>
             <p className="mt-5 bg-black bg-opacity-25 text-white p-4 text-xl lg:text-2xl rounded-xl backdrop-blur-xl">
-              Fascinated by technology's endless possibilities, my academic
-              journey has built a strong foundation in computer science and
-              problem-solving. Beyond the classroom, I'm an avid learner,
-              dedicated to continuous growth in coding, designing, and exploring
-              cutting-edge technologies.
+              I’m an Applied AI Engineer focused on building production-ready AI systems,
+              including fine-tuned LLMs, Retrieval-Augmented Generation (RAG) pipelines,
+              and agentic workflows. My work spans government, healthcare, and enterprise
+              use cases, with a strong emphasis on reliability, controlled outputs, and
+              real-world deployment constraints. I continuously refine my skills in model
+              training, fine-tuning, and scalable AI system design.
             </p>
             <div className="py-10 flex flex-col">
               <h1 className="text-4xl blue-gradient-text font-semibold backdrop-blur-[2px]">
