@@ -64,14 +64,11 @@ class Experiance extends React.Component {
               </span>
             </h1>
             <p className="mt-5 bg-black bg-opacity-25 text-white p-4 text-xl lg:text-2xl rounded-xl backdrop-blur-xl">
-              I possess expertise as a proficient software developer,
-              specializing in diverse domain solutions and boasting two years of
-              freelance experience. Backed by a robust Computer Engineering
-              background and proficiency in multiple technologies, I am
-              enthusiastic about leveraging my skills and analytical
-              capabilities within an innovative team. My dedication to
-              technology and hands-on experience position me as a valuable
-              resource for companies.
+              AI Engineer with hands-on experience building and deploying LLM-powered systems,
+              including task-specific expert models, Retrieval-Augmented Generation (RAG) pipelines,
+              and tool-augmented workflows. Experienced in delivering production AI solutions
+              for government, healthcare, and enterprise clients, with a strong focus on
+              reliability, controlled outputs, and real-world deployment constraints.
             </p>
             <div className="py-2">
               <div className="mt-10 flex">
