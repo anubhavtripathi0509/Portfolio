@@ -1,0 +1,67 @@
+# Anubhav Tripathi
+
+Site: https://anubhavtripathi.vercel.app/
+
+> Senior AI/ML Engineer at UltraSafe AI (us.inc), based in Mumbai, India, hybrid with the
+> Dubai team. Fine-tunes open-source large language models into domain experts, builds
+> retrieval-augmented generation systems, and builds real-time voice agents. Work shipped
+> into UAE government departments, US healthcare teams and enterprise environments.
+> Professional since September 2024.
+
+## Contact
+
+- Email: anubhavtripathi0509@gmail.com
+- LinkedIn: https://www.linkedin.com/in/anubhavtripathi-ai
+- GitHub: https://github.com/anubhavtripathi0509
+
+## Current role
+
+Senior AI/ML Engineer, UltraSafe AI, March 2026 to present. Dubai, UAE, hybrid from Mumbai.
+Duplex audio and agent orchestration behind UltraVoice, on a stack where the LLM, TTS and
+STT are built in-house.
+
+## Previous roles
+
+AI/ML Engineer, Nimap Infotech, February 2025 to February 2026, Mumbai. Client-facing
+delivery of LLM systems for UAE government, US healthcare and enterprise: domain-specific
+expert models, RAG retrieval, tool-augmented workflows.
+
+Software Engineer (contract), SoftDigits, September 2024 to January 2025, remote.
+GAN-based image authentication in PyTorch, deployed as a REST API.
+
+## Projects
+
+UltraVoice (Voice AI, 2026, UltraSafe AI, https://ultravoice.us.inc/). Voice agents that
+answer real phone calls. Duplex audio path with streaming STT and TTS and barge-in,
+concurrency and back-off under TTS rate limits, agent orchestration with state, tool calls,
+retries and mid-call recovery.
+
+Patient report retrieval (Healthcare, 2025, US client). RAG pipeline giving clinicians
+patient records in seconds: embeddings, vector search, PostgreSQL, Django REST, with
+backend validation over LLM output for access-controlled medical data.
+
+Dubai Government service classification (Government, 2025, UAE). Fine-tuned expert model
+routing service requests: SFT with PEFT and LoRA, constrained inference for deterministic
+classification.
+
+Image-based authentication (Computer vision, 2024, SoftDigits). GAN model in PyTorch behind
+a REST API.
+
+## Skills
+
+Models and agents: SFT, PEFT/LoRA, expert models, dataset preparation, agent workflows,
+prompt engineering, tool calling, LangChain, LangGraph.
+Retrieval and data: embeddings, vector search, Redis, PostgreSQL, MySQL.
+Voice: streaming STT, neural TTS, barge-in and endpointing, telephony transport, WebSockets.
+Serving and backend: vLLM, TGI, GPU serving, AWS EC2 and S3, Docker, Python, Django REST,
+FastAPI, SQL.
+
+## Achievements
+
+District Winner, Maharashtra Student Innovation Challenge, selected from 9,227 teams.
+Winner, Technoscope 2024, among 800+ participants.
+
+## Education
+
+B.E. Computer Engineering, Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai,
+2021 to 2025, CGPA 7.52 of 10.

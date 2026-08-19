@@ -1,25 +1,1551 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <title>Anubhav Tripathi</title>
-    <link rel="icon" type="image/svg+xml" href="/src/assets/favicon1.ico" />
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
-    <meta name="title" content="Anubhav Tripathi" />
-    <meta name="author" content="Anubhav Tripathi" />
-    <meta
-      name="description"
-      content="Hello & welcome to my portfolio. I am a Software Developer based in India."
-    />
-    <meta name="theme-color" content="#ea580c" />
-    <meta name="robots" content="index, follow" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anubhav Tripathi, Senior AI/ML Engineer</title>
+<meta name="description" content="Anubhav Tripathi is a Senior AI/ML Engineer at UltraSafe AI in Mumbai. He fine-tunes open models into domain experts, builds retrieval systems, and ships realtime voice agents used by government, healthcare, and enterprise teams.">
+<meta name="theme-color" content="#070B12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070B12'/%3E%3Cg fill='%234FE3C1'%3E%3Crect x='6' y='14' width='2.4' height='4' rx='1.2'/%3E%3Crect x='10' y='11' width='2.4' height='10' rx='1.2'/%3E%3Crect x='14' y='7' width='2.4' height='18' rx='1.2'/%3E%3Crect x='18' y='11' width='2.4' height='10' rx='1.2'/%3E%3Crect x='22' y='14' width='2.4' height='4' rx='1.2'/%3E%3C/g%3E%3C/svg%3E">
+<!-- DEPLOY STEP: patch og:url and og:image with the live absolute URL before zipping -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Anubhav Tripathi, Senior AI/ML Engineer">
+<meta property="og:description" content="Fine-tuning, retrieval, and realtime voice, shipped into real environments. UltraSafe AI, Mumbai and Dubai.">
+<meta property="og:url" content="https://anubhavtripathi.vercel.app/">
+<meta property="og:image" content="https://anubhavtripathi.vercel.app/assets/hero-ending.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Anubhav Tripathi, Senior AI/ML Engineer">
+<meta name="twitter:description" content="Fine-tuning, retrieval, and realtime voice, shipped into real environments.">
+<meta name="twitter:image" content="https://anubhavtripathi.vercel.app/assets/hero-ending.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"Person","@id":"#person","name":"Anubhav Tripathi","givenName":"Anubhav","familyName":"Tripathi",
+"jobTitle":"Senior AI/ML Engineer","email":"mailto:anubhavtripathi0509@gmail.com",
+"description":"Senior AI/ML Engineer at UltraSafe AI. Fine-tunes open-source LLMs into domain experts, builds RAG systems, and builds real-time voice agents delivered into UAE government departments, US healthcare teams and enterprise environments.",
+"sameAs":["https://www.linkedin.com/in/anubhavtripathi-ai","https://github.com/anubhavtripathi0509"],
+"address":{"@type":"PostalAddress","addressLocality":"Mumbai","addressCountry":"IN"},
+"worksFor":{"@type":"Organization","name":"UltraSafe AI","url":"https://us.inc/"},
+"alumniOf":{"@type":"EducationalOrganization","name":"Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai"},
+"award":["District Winner, Maharashtra Student Innovation Challenge, selected from 9,227 teams","Winner, Technoscope 2024, among 800+ participants"],
+"knowsAbout":["LLM fine-tuning","SFT","LoRA","RAG","vector search","vLLM","TGI","LangChain","LangGraph","streaming STT","neural TTS","telephony","WebSockets","Python","Django REST","FastAPI","AWS","Docker"],
+"hasOccupation":{"@type":"Occupation","name":"AI/ML Engineer","occupationalCategory":"15-2051.00",
+"description":"Fine-tunes open-source large language models into domain experts using SFT and PEFT/LoRA, builds retrieval-augmented generation systems, and builds realtime voice agents.",
+"occupationLocation":{"@type":"City","name":"Mumbai, India"}}},
+{"@type":"WebSite","@id":"#website","name":"Anubhav Tripathi, Senior AI/ML Engineer","inLanguage":"en","publisher":{"@id":"#person"}},
+{"@type":"ProfilePage","mainEntity":{"@id":"#person"},"isPartOf":{"@id":"#website"}}
+]}
+</script>
+<style>
+/* ---------- fonts, trimmed to the weights in use ---------- */
+@font-face{font-family:'Clash Display';src:url('assets/fonts/ClashDisplay-Semibold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Clash Display';src:url('assets/fonts/ClashDisplay-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'General Sans';src:url('assets/fonts/GeneralSans-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'General Sans';src:url('assets/fonts/GeneralSans-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fonts/JetBrainsMono-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+
+/* ---------- tokens ---------- */
+:root{
+  --canvas:#070B12;
+  --panel:#0D141F;
+  --accent:#4FE3C1;
+  --accent-hover:#6FF0D2;
+  --accent-muted:rgba(79,227,193,.14);
+  --text-secondary:#93A7B8;
+  --text-primary:#E9F2F4;
+  --line:rgba(147,167,184,.16);
+  --display:'Clash Display',sans-serif;
+  --body:'General Sans',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --tshadow:0 1px 2px rgba(5,5,10,.95),0 3px 12px rgba(5,5,10,.78),0 10px 44px rgba(5,5,10,.8);
+  --ease:cubic-bezier(.16,1,.3,1);
+  --ease2:cubic-bezier(.4,0,.2,1);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden;overflow-x:clip}
+body{margin:0;background:var(--canvas);color:var(--text-primary);font-family:var(--body);font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.06;letter-spacing:.005em;margin:0;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+img{max-width:100%;display:block}
+.skip{position:absolute;left:-9999px;top:0;background:var(--panel);color:var(--text-primary);padding:10px 16px;z-index:99;border-radius:4px}
+.skip:focus{left:12px;top:12px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
+.mono{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ---------- fixed environment layer: one world behind everything ---------- */
+#env{position:fixed;inset:0;z-index:0;pointer-events:none}
+
+/* ---------- nav ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:40;display:flex;align-items:center;gap:22px;height:64px;padding:0 clamp(16px,4vw,44px);background:linear-gradient(180deg,rgba(7,11,18,.82),rgba(7,11,18,0));backdrop-filter:blur(8px)}
+nav .wordmark{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:600;font-size:17px;text-decoration:none}
+nav .wordmark svg{display:block}
+nav .links{margin-left:auto;display:flex;gap:22px;align-items:center}
+nav .links a{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary);text-decoration:none;padding:6px 2px;border-bottom:1px solid transparent;transition:color .3s var(--ease),border-color .3s var(--ease)}
+nav .links a:hover{color:var(--text-primary);border-color:var(--accent)}
+nav .links a.cta-mini{font-family:var(--body);font-weight:500;font-size:13.5px;letter-spacing:0;text-transform:none;color:#04241D;background:var(--accent);padding:9px 16px;border-radius:6px;border-bottom:0;text-decoration:none;transition:background .3s var(--ease)}
+nav .links a.cta-mini:hover{background:var(--accent-hover);color:#04241D}
+@media (max-width:720px){nav .links a:not(.keep){display:none}}
+
+/* ---------- hero: pinned journey ---------- */
+.hero{position:relative;height:1000vh;z-index:1}
+.stage{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden}
+.stage .poster{position:absolute;inset:0;background-size:cover;background-position:center}
+.stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s var(--ease);will-change:transform;transform:translateZ(0)}
+.stage.video-ready video{opacity:1}
+.stage .scrim{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 120% 90% at 50% 45%,rgba(7,11,18,0) 35%,rgba(7,11,18,.62) 100%)}
+.ring{position:absolute;right:26px;bottom:26px;width:34px;height:34px;color:var(--accent);transform:rotate(-90deg);opacity:.85}
+.chev{position:absolute;right:26px;bottom:26px;width:22px;height:22px;color:var(--text-secondary);animation:chev 2.6s var(--ease2) -1.2s infinite}
+@keyframes chev{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(6px);opacity:1}}
+
+/* caption bands */
+.band{position:absolute;inset:0;display:flex;pointer-events:none;opacity:0}
+.band .inner{position:relative;max-width:620px;padding:0 clamp(20px,5vw,64px)}
+.band::before{content:"";position:absolute;inset:-4%;pointer-events:none;opacity:calc(.25 + .75*var(--k,1));background:radial-gradient(ellipse 74% 62% at var(--sx,50%) var(--sy,50%),rgba(5,8,14,var(--sa,.62)) 0%,rgba(5,8,14,calc(var(--sa,.62)*.66)) 46%,rgba(5,8,14,0) 76%)}
+.band h1,.band h2,.band .line{text-shadow:var(--tshadow)}
+.band h1{font-size:clamp(40px,6.2vw,84px);font-weight:600;letter-spacing:.004em}
+.band .line{font-family:var(--display);font-weight:500;font-size:clamp(26px,3.6vw,52px);line-height:1.12}
+.band .sub{margin-top:14px;font-size:clamp(15px,1.6vw,19px);color:var(--text-secondary);text-shadow:var(--tshadow)}
+.band .kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;text-shadow:var(--tshadow)}
+.band .w{display:inline-block;white-space:pre}
+.band .c{display:inline-block;white-space:pre}
+/* band placements, chosen from the footage's calm regions */
+.band[data-pos="b1"]{align-items:flex-start}.band[data-pos="b1"] .inner{margin-top:16vh}
+.band[data-pos="b2"]{align-items:flex-start;justify-content:center;text-align:center}.band[data-pos="b2"] .inner{margin-top:12vh}
+.band[data-pos="b3"]{align-items:center}.band[data-pos="b3"] .inner{margin-left:2vw}
+.band[data-pos="b4"]{align-items:center;justify-content:flex-end;text-align:right}.band[data-pos="b4"] .inner{margin-right:2vw}
+.band[data-pos="b5"]{align-items:flex-end}.band[data-pos="b5"] .inner{margin-bottom:18vh;margin-left:2vw}
+.band[data-pos="b6"]{align-items:flex-start;justify-content:center;text-align:center}.band[data-pos="b6"] .inner{margin-top:13vh;max-width:760px}
+.band .cta-row{margin-top:26px;display:flex;gap:14px;justify-content:center;pointer-events:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--body);font-weight:500;font-size:15px;padding:13px 24px;border-radius:8px;text-decoration:none;border:1px solid transparent;transition:background .3s var(--ease),border-color .3s var(--ease),color .3s var(--ease);text-shadow:none}
+.btn.primary{background:var(--accent);color:#04241D}
+.btn.primary:hover{background:var(--accent-hover)}
+.btn.ghost{border-color:rgba(147,167,184,.38);color:var(--text-primary)}
+.btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+.btn[aria-disabled="true"]{opacity:.45;cursor:not-allowed;border-style:dashed}
+
+/* static hero (phones, portrait, reduced motion): a designed layout, not an apology */
+.static-hero{display:none;position:relative;min-height:100vh;min-height:100dvh;align-items:flex-end;background:#0A1219 url('assets/hero-ending.jpg') center/cover no-repeat}
+.static-hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,11,18,.4),rgba(7,11,18,.86) 78%)}
+.static-hero .inner{position:relative;padding:0 clamp(20px,6vw,64px) 12vh;max-width:760px}
+.static-hero h1{font-size:clamp(40px,11vw,72px)}
+.static-hero .sub{margin-top:14px;color:var(--text-secondary);font-size:17px;max-width:46ch}
+.static-hero .cta-row{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+
+/* ---------- the page below the settle ---------- */
+main{position:relative;z-index:2;background:transparent}
+main::before{content:"";position:absolute;top:0;left:0;right:0;height:18vh;background:linear-gradient(180deg,rgba(7,11,18,0),var(--canvas));pointer-events:none;z-index:-1}
+section{position:relative;padding:var(--pt,clamp(84px,12vh,150px)) clamp(20px,6vw,72px) var(--pb,clamp(84px,12vh,150px))}
+/* the rhythm reads: big, tight, big, tight, air, quiet, AIR */
+#about{--pt:clamp(96px,14vh,170px)}
+#experience{--pt:clamp(56px,8vh,100px)}
+#work{--pt:clamp(56px,8vh,100px);--pb:clamp(100px,15vh,180px)}
+#skills{--pt:clamp(48px,7vh,88px);--pb:clamp(64px,9vh,110px)}
+#wins{--pt:clamp(110px,16vh,190px);--pb:clamp(48px,7vh,84px)}
+#education{--pt:0px;--pb:clamp(100px,15vh,170px)}
+#contact{--pt:clamp(140px,24vh,250px);--pb:clamp(110px,18vh,200px)}
+.wrap{max-width:1160px;margin:0 auto}
+.kick{font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+h2.head{font-size:min(clamp(30px,4.4vw,54px),7.5vh);max-width:18ch}
+/* the carrier line: the phone line running through the page. Between sections
+   it carries signal; at the footer it goes flat and the mark rests on it. */
+.divider{position:relative;width:100%;height:clamp(48px,8vh,72px);display:flex;align-items:center;justify-content:space-between;padding:0}
+.divider::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(147,167,184,.14)}
+.divider .bar{width:2px;border-radius:1px;background:var(--accent);opacity:.34;transform:scaleY(.04);transform-origin:center;transition:transform .55s var(--ease)}
+.divider .bar.peak{opacity:.8}
+.divider.on .bar{transform:scaleY(1)}
+
+/* about */
+/* About: an editorial spread. The headline physically breaks over the plate. */
+.about-stage{display:grid;grid-template-columns:[rail] clamp(28px,4vw,56px) repeat(12,[c] 1fr)}
+.about-kick{grid-column:rail;grid-row:1/4;writing-mode:vertical-rl;transform:rotate(180deg);justify-self:start;align-self:start;position:relative;font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0}
+.about-kick::after{content:"";position:absolute;left:50%;top:calc(100% + 14px);width:1px;height:clamp(120px,22vh,260px);background:var(--line);transform:scaleY(var(--k,1));transform-origin:top}
+.about-head{grid-column:c 1/c 11;grid-row:1;z-index:2;font-size:min(clamp(42px,6.8vw,96px),11vh);line-height:1.03;font-weight:600;max-width:none}
+.about-head .hl{display:block}
+.about-head .hl2{margin-left:clamp(48px,9vw,160px)}
+.portrait{grid-column:c 9/-1;grid-row:1/3;justify-self:end;align-self:start;width:min(100%,300px);aspect-ratio:4/5;margin-top:clamp(84px,10vw,148px);z-index:1;position:relative;border:1px solid var(--line);border-radius:12px;background:linear-gradient(160deg,var(--panel),#0A101A);overflow:visible}
+.portrait::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;border-radius:12px 12px 0 0;background:linear-gradient(90deg,transparent,rgba(79,227,193,.5),transparent)}
+.portrait .corners{position:absolute;inset:-10px;pointer-events:none}
+.portrait .corners path{stroke:rgba(147,167,184,.4);stroke-width:1;fill:none;transition:transform .4s var(--ease)}
+.portrait:hover .corners .c-tl{transform:translate(-2px,-2px)}
+.portrait:hover .corners .c-tr{transform:translate(2px,-2px)}
+.portrait:hover .corners .c-bl{transform:translate(-2px,2px)}
+.portrait:hover .corners .c-br{transform:translate(2px,2px)}
+.portrait .plate-mark{position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);pointer-events:none}
+.portrait .plate-mark rect{fill:rgba(79,227,193,.26)}   /* static on purpose: the now-dot next door is the living accent */
+.portrait .cap{position:absolute;left:18px;bottom:16px;text-align:left}
+.portrait .cap .tag{display:block;position:relative;padding-left:16px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
+.portrait .cap .tag::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:8px;height:1.5px;background:var(--accent)}
+.portrait .cap .spec{display:block;margin-top:5px;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-secondary);opacity:.7}
+.about-body{grid-column:c 2/c 8;grid-row:2;margin-top:clamp(40px,6vh,72px);max-width:52ch;color:var(--text-primary)}
+.facts{grid-column:c 9/-1;grid-row:3;justify-self:end;width:min(100%,300px);margin:18px 0 0}
+.facts div{display:block;padding:12px 0;border-top:1px solid var(--line)}
+.facts dt{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-secondary)}
+.facts dd{margin:3px 0 0;font-size:14.5px;color:var(--text-primary)}
+@media (max-width:860px){
+  .about-stage{grid-template-columns:1fr 1fr;grid-template-rows:none;column-gap:clamp(20px,4vw,40px)}
+  .about-kick{writing-mode:horizontal-tb;transform:none;grid-column:1/3;grid-row:auto;margin-bottom:18px}
+  .about-kick::after{display:none}
+  .about-head{grid-column:1/3;grid-row:auto;margin-top:8px}
+  .about-head .hl2{margin-left:clamp(24px,6vw,80px)}
+  .portrait{grid-column:1;grid-row:auto;justify-self:start;margin-top:32px}
+  .about-body{grid-column:2;grid-row:auto;margin-top:32px;max-width:none}
+  .facts{grid-column:2;grid-row:auto;justify-self:start;margin-top:16px}
+}
+@media (max-width:640px){
+  .about-stage{grid-template-columns:1fr}
+  .about-kick,.about-head,.portrait,.about-body,.facts{grid-column:1}
+  .about-head .hl2{margin-left:0}
+  .about-head{font-size:clamp(34px,9vw,52px)}
+}
+
+/* Experience: time is the structure. A 24-month runway, Sep 2024 to Aug 2026.
+   Bar widths are real durations; only the current role touches the now line. */
+#experience{--t:clamp(0,calc((var(--pp,1) - .12)*1.28),1)}
+.exp-head{display:flex;align-items:baseline;gap:22px}
+.exp-head .kick{margin-bottom:0;flex:0 0 auto}
+.exp-head .rule{flex:1;height:1px;background:var(--line);align-self:center}
+.exp-head h2{font-size:min(clamp(34px,5vw,64px),7vh);text-align:right;max-width:none}
+.runway{margin-top:clamp(16px,3vh,44px);position:relative}
+@media (min-width:900px){#experience .pin-stage{padding-top:max(72px,5vh)}}
+.axis{position:relative;height:26px;margin-bottom:10px}
+.axis::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line);transform:scaleX(clamp(0,calc(var(--pp,1)*4),1));transform-origin:left}
+/* the playhead: a light travelling across two years of work */
+.playhead{position:absolute;top:26px;bottom:0;width:1px;left:calc(var(--t)*100%);background:linear-gradient(180deg,rgba(79,227,193,.7),rgba(79,227,193,0) 80%);opacity:clamp(0,calc(var(--pp,1)*5 - .5),1);pointer-events:none}
+@media (prefers-reduced-motion:reduce){.playhead{opacity:0}}
+.axis i{position:absolute;top:5px;font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary);font-variant-numeric:tabular-nums}
+.axis i::before{content:"";position:absolute;left:0;top:-5px;width:1px;height:6px;background:var(--line)}
+.nowline{position:absolute;right:0;top:26px;bottom:0;width:1px;background:linear-gradient(180deg,var(--accent),rgba(79,227,193,0) 85%);opacity:.55}
+.nowdot{position:absolute;right:-4px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--accent-muted)}
+#experience.alive .nowdot{animation:breathe 4.8s var(--ease2) -1.2s infinite}
+.role{position:relative;padding-top:clamp(26px,4.5vh,40px);margin-top:clamp(12px,2.6vh,36px)}
+.role:first-of-type{margin-top:0}
+.role .bar{position:absolute;top:0;height:clamp(20px,3vh,30px);border-radius:6px;background:rgba(13,20,31,.6);border:1px solid var(--line)}
+.role--soft .bar{left:0;width:20.833%}
+.role--nimap .bar{left:20.833%;width:54.167%}
+.role--ultra .bar{left:75%;width:25%;-webkit-mask-image:linear-gradient(90deg,#000 78%,transparent);mask-image:linear-gradient(90deg,#000 78%,transparent)}
+.role--ultra .bar::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,227,193,.5),transparent)}
+.role .rtext{max-width:40ch}
+.role--nimap .rtext{margin-left:20.833%;max-width:46ch}
+.role--ultra .rtext{margin-left:auto;width:min(100%,44ch);padding-right:28px}
+.role .when{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary);font-variant-numeric:tabular-nums;margin-bottom:6px}
+.role .top{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline}
+.role h3{font-size:min(clamp(19px,2.2vw,26px),3.6vh);font-weight:500}
+.role .co{color:var(--accent);font-weight:500;font-size:15.5px;text-decoration:none}
+.role .co:hover{text-decoration:underline}
+.role .where{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary);margin-top:4px}
+.role p.desc{margin-top:clamp(4px,1vh,10px);color:var(--text-secondary);font-size:clamp(13px,2vh,15px)}
+.role:hover .bar{transform:translateY(-2px);border-color:rgba(79,227,193,.4);transition:transform .4s var(--ease),border-color .4s var(--ease)}
+/* time-true playback: each bar fills exactly while the playhead crosses its
+   real months, its text waking as its era begins. Scroll back, rewind time. */
+.role--soft{--bk:clamp(0,calc(var(--t)/.20833),1)}
+.role--nimap{--bk:clamp(0,calc((var(--t) - .20833)/.54167),1)}
+.role--ultra{--bk:clamp(0,calc((var(--t) - .75)/.25),1)}
+.role .bar{opacity:clamp(0,calc(var(--pp,1)*4),1)}
+@media (min-width:900px){
+  .role .bar::before{content:"";position:absolute;inset:0;border-radius:5px;
+    background:linear-gradient(90deg,rgba(79,227,193,.20),rgba(79,227,193,.07));
+    transform:scaleX(var(--bk,1));transform-origin:left}
+  .role--ultra .bar::before{border-radius:5px 0 0 5px}
+}
+.role .rtext{opacity:clamp(0,calc(var(--bk,1)*2.2),1);transform:translateY(calc((1 - clamp(0,calc(var(--bk,1)*2.2),1))*18px))}
+.nowline{opacity:calc(clamp(0,calc(var(--pp,1)*3),1)*.55)}
+.nowdot{opacity:clamp(0,calc((var(--t) - .92)*12),1)}
+@media (max-width:760px){
+  .exp-head{flex-wrap:wrap}
+  .exp-head .rule{display:none}
+  .exp-head h2{text-align:left}
+  .role{padding-top:16px}
+  .role .bar{height:3px;border:0;border-radius:2px;background:rgba(147,167,184,.14)}
+  .role .bar::before{content:"";position:absolute;top:0;bottom:0;border-radius:2px;background:rgba(147,167,184,.6)}
+  .role--soft .bar{left:0;width:100%}
+  .role--soft .bar::before{left:0;width:20.833%}
+  .role--nimap .bar{left:0;width:100%}
+  .role--nimap .bar::before{left:20.833%;width:54.167%}
+  .role--ultra .bar{left:0;width:100%;-webkit-mask-image:none;mask-image:none}
+  .role--ultra .bar::before{left:75%;width:25%;background:var(--accent)}
+  .role--nimap .rtext,.role--ultra .rtext{margin-left:0;width:auto;max-width:none}
+  .axis i{display:none}
+  .axis .t0,.axis .t3{display:block}
+}
+
+/* Selected work: the deck. Each system takes the full stage in order,
+   newest first, driven by scroll. Under 900px it reads as a stacked sheet. */
+.work-wrap{max-width:min(1360px,100%);margin:0 auto;width:100%}
+@media (min-width:900px){
+  #work .deck{position:relative;min-height:min(66vh,760px)}
+  /* id-weight on purpose: .flag and .lrow both set position:relative later in
+     the sheet and would win source order at class weight. margin:auto +
+     fit-content centers each slide in the deck whatever its display type. */
+  #work .slide{position:absolute;inset:0;margin:auto 0;height:fit-content;max-height:100%;
+    opacity:min(var(--si,1),calc(1 - var(--so,0)));
+    transform:translateY(calc((1 - var(--si,1))*70px - var(--so,0)*56px)) scale(calc(1 - var(--so,0)*.04));
+    pointer-events:none}
+  #work .slide.live{pointer-events:auto}
+  /* four beats, long holds: transitions are a tenth of the runway each */
+  #work .slide.s1{--si:1;--so:clamp(0,calc((var(--pp,1) - .26)*10),1)}
+  #work .slide.s2{--si:clamp(0,calc((var(--pp,1) - .26)*10),1);--so:clamp(0,calc((var(--pp,1) - .50)*10),1)}
+  #work .slide.s3{--si:clamp(0,calc((var(--pp,1) - .50)*10),1);--so:clamp(0,calc((var(--pp,1) - .74)*10),1)}
+  #work .slide.s4{--si:clamp(0,calc((var(--pp,1) - .74)*10),1);--so:0}
+  #work .flag.slide:not(.s1) h3{font-size:min(clamp(32px,3.6vw,52px),7vh)}
+  #work .flag.s4 .fbody>div:last-child{align-self:center}
+  /* deck rail: where you are in the four */
+  .deck-rail{position:absolute;right:0;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:14px;align-items:flex-end;z-index:3;padding:12px 0 12px 18px;background:linear-gradient(90deg,rgba(7,11,18,0),rgba(7,11,18,.93) 42%)}
+  .deck-rail i{font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--text-secondary);opacity:.35;transition:none;font-variant-numeric:tabular-nums}
+  .deck-rail i:nth-child(1){opacity:calc(.35 + .65*(1 - clamp(0,calc((var(--pp,1) - .26)*10),1)))}
+  .deck-rail i:nth-child(2){opacity:calc(.35 + .65*min(clamp(0,calc((var(--pp,1) - .26)*10),1),calc(1 - clamp(0,calc((var(--pp,1) - .50)*10),1))))}
+  .deck-rail i:nth-child(3){opacity:calc(.35 + .65*min(clamp(0,calc((var(--pp,1) - .50)*10),1),calc(1 - clamp(0,calc((var(--pp,1) - .74)*10),1))))}
+  .deck-rail i:nth-child(4){opacity:calc(.35 + .65*clamp(0,calc((var(--pp,1) - .74)*10),1))}
+}
+@media (max-width:899px){
+  .slide{margin-top:40px}
+  .slide:first-child{margin-top:0}
+  .deck-rail{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  /* no pin, no windows: the four systems read as a stacked sheet */
+  #work .slide{position:static;margin:0 0 44px;height:auto;max-height:none;opacity:1;transform:none;pointer-events:auto}
+  #work .slide:last-child{margin-bottom:0}
+  #work .deck{min-height:0}
+  #work .deck-rail{display:none}
+}
+.work-head{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:clamp(20px,3.5vh,48px)}
+.work-head h2{max-width:none}
+.work-head .wl{display:block;font-size:clamp(38px,5.8vw,84px);line-height:1.04;font-weight:600}
+.work-head .wl2{font-weight:500;opacity:.72;padding-left:clamp(40px,12vw,180px)}
+.work-head .kick{margin:clamp(8px,1.2vw,18px) 0 0}
+#work .meta{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline}
+#work .year{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--text-secondary);font-variant-numeric:tabular-nums}
+#work .role-tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+#work p.blurb{color:var(--text-secondary);font-size:15.5px}
+#work ul{margin:0;padding:0;list-style:none}
+#work li{position:relative;padding-left:18px;font-size:14.5px;color:var(--text-secondary);line-height:1.55;transition:color .5s var(--ease)}
+#work li::before{content:"";position:absolute;left:0;top:.66em;width:8px;height:1.5px;background:var(--accent)}
+#work .stack{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+#work .stack span{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-secondary);border:1px solid var(--line);border-radius:5px;padding:4px 9px}
+#work .visit{display:inline-flex;align-items:center;gap:7px;font-weight:500;font-size:14.5px;color:var(--accent);text-decoration:none;margin-left:auto}
+#work .visit:hover{color:var(--accent-hover)}
+#work .visit svg{transition:transform .3s var(--ease)}
+#work .visit:hover svg{transform:translateX(3px)}
+/* flagship panel */
+.flag{background:linear-gradient(165deg,var(--panel),#0A111B);border:1px solid var(--line);border-radius:16px;overflow:hidden;position:relative;padding:0;transition:border-color .5s var(--ease)}
+.flag::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,227,193,.5),transparent);opacity:.55;transition:opacity .5s var(--ease)}
+.flag:hover{border-color:rgba(79,227,193,.35)}
+.flag:hover::after{opacity:1}
+.flag .fmeta{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline;padding:14px clamp(24px,4vw,52px);border-bottom:1px solid var(--line)}
+.flag .fbody{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,4vw,56px);padding:min(clamp(32px,4.5vw,56px),4.5vh) clamp(24px,4vw,52px) min(clamp(28px,4vw,44px),4vh);position:relative}
+.num-ghost{position:absolute;top:clamp(10px,1.5vw,20px);left:clamp(16px,2.5vw,36px);z-index:0;font:600 clamp(120px,15vw,210px)/1 var(--display);pointer-events:none;user-select:none;color:rgba(147,167,184,.07)}
+@supports (-webkit-text-stroke:1px #000){.num-ghost{color:transparent;-webkit-text-stroke:1px rgba(147,167,184,.20)}}
+.flag h3{font-size:min(clamp(40px,5.2vw,72px),8.5vh);font-weight:600;position:relative;z-index:1;margin-top:min(clamp(40px,5vw,72px),5.5vh)}
+.flag p.blurb{max-width:44ch;margin-top:16px;font-size:16.5px}
+.flag .evi{margin-top:min(clamp(36px,4vw,60px),4.5vh)}
+.flag .evi li{padding:clamp(8px,1.5vh,14px) 0;border-top:1px solid var(--line)}
+.flag .evi li:first-child{border-top:0}
+.flag.lit .evi li{color:var(--text-primary)}
+/* the console strip: the duplex wave as the flagship's floor */
+.console{border-top:1px solid var(--line);background:rgba(5,8,14,.55);padding:clamp(18px,2.5vw,26px) clamp(24px,4vw,52px);display:flex;align-items:center;gap:clamp(16px,2.5vw,28px);flex-wrap:wrap}
+/* short windows: the pinned stages compress instead of clipping */
+@media (min-width:900px) and (max-height:790px){.flag .console{display:none}}
+@media (min-width:900px) and (max-height:850px){
+  #experience .pin-stage{padding-top:60px}
+  .exp-head h2{font-size:min(4.6vw,46px)}
+  .runway{margin-top:12px}
+  .role{padding-top:24px;margin-top:8px}
+  .role p.desc{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px;line-height:1.5}
+  .role .when{margin-bottom:3px}
+}
+@media (min-width:900px) and (max-height:700px){
+  .pin-stage{padding-top:64px}
+  h2.head{font-size:min(clamp(28px,4vw,54px),6.4vh)}
+  .work-head{margin-bottom:10px}
+  #work .deck{min-height:min(64vh,760px)}
+  .console{padding:10px clamp(24px,4vw,52px)}
+  .flag .fmeta{padding:8px clamp(24px,4vw,52px)}
+  .flag .fbody{padding-top:16px;padding-bottom:14px}
+  .flag h3{margin-top:14px}
+  .flag .evi{margin-top:18px}
+  .flag .evi li{padding:6px 0}
+  .layer .tags span{font-size:10.5px;line-height:1.55;padding-right:22px}
+  .layer .tags span:not(:last-child)::after{right:9px}
+  .layer{padding:8px 0 12px}
+  .layer h3{margin-bottom:6px}
+  .stack{margin-top:clamp(16px,3vh,40px)}
+}
+.hold-note{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary);flex:0 1 auto;max-width:34ch;margin:0}
+#holdBtn{font-family:var(--body);font-weight:500;font-size:14.5px;color:#04241D;background:var(--accent);border:0;border-radius:8px;padding:12px 22px;cursor:pointer;min-height:44px;transition:background .3s var(--ease),transform .15s var(--ease2);touch-action:none}
+#holdBtn:hover{background:var(--accent-hover)}
+#holdBtn:active{transform:scale(.98)}
+#holdWave{flex:1 1 240px;min-width:0;height:clamp(64px,9vw,96px);background:transparent;border:0;border-radius:0}
+/* the ledger: typography directly on the canvas, hairlines that rule themselves */
+.ledger{margin-top:clamp(48px,6vh,72px)}
+.lrow{position:relative;display:grid;grid-template-columns:clamp(56px,7vw,110px) minmax(0,4fr) minmax(0,6fr);column-gap:clamp(20px,3vw,44px);padding:clamp(28px,4vw,44px) 0}
+.lrow::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--line);transform:scaleX(var(--k,1));transform-origin:left}
+@media (max-width:899px){
+  .lrow>*{opacity:var(--k,1);transform:translateY(calc((1 - var(--k,1))*18px))}
+}
+@media (min-width:900px){
+  .lrow{border-top:1px solid var(--line)}
+  .lrow::before{display:none}
+  .lrow{padding:clamp(24px,3vw,40px) 0}
+  .lrow.slide{border-top:0}
+  .lrow.slide h3{font-size:min(clamp(30px,3.4vw,46px),6vh)}
+  .lrow.slide.compact h3{font-size:clamp(26px,3vw,38px)}
+}
+.lrow::after{content:"";width:18px;height:2px;background:var(--accent);position:absolute;left:0;top:calc(clamp(28px,4vw,44px) + .5em);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+.lrow:hover::after{transform:scaleX(1)}
+.lnum{font:400 clamp(26px,3vw,40px)/1 var(--mono);color:var(--text-secondary);opacity:.45;font-variant-numeric:tabular-nums;transition:opacity .4s var(--ease)}
+.lrow:hover .lnum{opacity:1}
+.lrow h3{font-size:clamp(22px,2.4vw,30px);font-weight:500}
+.lrow .year{display:block;margin-top:8px}
+.lrow .role-tag{display:block;margin-top:6px}
+.lrow ul{display:grid;gap:9px;margin-top:12px}
+@media (min-width:900px){
+  .lrow.slide .blurb{margin-bottom:10px}
+  .lrow.slide ul{margin-top:18px;gap:12px}
+  .lrow.slide .stack{margin-top:26px}
+}
+.lrow.compact{padding:clamp(20px,3vw,32px) 0}
+.lrow.compact h3{font-size:clamp(19px,2vw,24px)}
+.lrow.compact p.blurb{margin-top:8px;max-width:52ch}
+.lrow.compact .stack{margin-top:0;align-self:start}
+@media (max-width:900px){
+  .work-head{flex-direction:column}
+  .work-head .kick{order:-1;margin:0 0 14px}
+  .flag .fbody{grid-template-columns:1fr}
+  .num-ghost{font-size:clamp(96px,24vw,140px)}
+  .flag .evi{margin-top:28px}
+  .console .hold-note{flex-basis:100%}
+  #holdWave{height:64px}
+  .lrow{grid-template-columns:clamp(40px,10vw,56px) minmax(0,1fr)}
+  .lrow .l3{grid-column:2;margin-top:14px}
+  .lnum{font-size:clamp(20px,5vw,28px)}
+}
+
+/* The stack: a system elevation. Foundation wider than what it carries. */
+.stack-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.stack-head .kick{margin:0}
+.stack-head h2{text-align:right;margin-left:auto;max-width:none}
+.stack{display:grid;grid-template-columns:repeat(12,1fr);margin-top:clamp(40px,6vh,72px)}
+.layer{position:relative;border-top:1px solid var(--line);padding:clamp(12px,2.2vh,22px) 0 clamp(14px,2.8vh,28px)}
+.layer::before{content:"";position:absolute;top:-1px;left:0;height:1px;width:56px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.layer:hover::before{transform:scaleX(1)}
+.layer.top{grid-column:3/13;grid-row:1;--lk:clamp(0,calc((var(--pp,1) - .52)*4),1);opacity:var(--lk);transform:translateY(calc((1 - var(--lk))*-34px))}
+.layer.mid-a{grid-column:1/7;grid-row:2;padding-right:32px;--lk:clamp(0,calc((var(--pp,1) - .3)*4),1);opacity:var(--lk);transform:translateY(calc((1 - var(--lk))*-26px))}
+.layer.mid-b{grid-column:7/13;grid-row:2;border-left:1px solid var(--line);padding-left:32px;--lk:clamp(0,calc((var(--pp,1) - .4)*4),1);opacity:var(--lk);transform:translateY(calc((1 - var(--lk))*-26px))}
+.layer.base{grid-column:1/13;grid-row:3;border-top:0;border-radius:12px;background:linear-gradient(180deg,rgba(13,20,31,.55),rgba(10,16,26,.15));margin-inline:clamp(-40px,-3vw,-12px);padding:26px clamp(12px,3vw,40px) 30px;--lk:clamp(0,calc((var(--pp,1) - .12)*4),1);opacity:var(--lk);transform:translateY(calc((1 - var(--lk))*40px))}
+.layer.base::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,227,193,.45),transparent)}
+#skills.alive .layer.base::after{animation:breathe 5.2s var(--ease2) -1.6s infinite}
+.layer h3{font-family:var(--display);font-weight:500;font-size:min(clamp(19px,2.2vw,26px),3.6vh);margin-bottom:clamp(8px,1.4vh,14px)}
+.layer .tags{display:flex;flex-wrap:wrap;align-items:center;row-gap:10px}
+.layer .tags span{position:relative;font:400 12px/1.9 var(--mono);letter-spacing:.05em;color:var(--text-secondary);padding-right:30px;transition:color .5s var(--ease)}
+.layer .tags span:not(:last-child)::after{content:"";position:absolute;right:13px;top:50%;transform:translateY(-50%);width:1.5px;height:8px;background:rgba(147,167,184,.35)}
+.layer .tags span:nth-child(3n):not(:last-child)::after{height:13px}
+.layer .tags span:nth-child(4n):not(:last-child)::after{height:5px}
+.layer .tags span:last-child{padding-right:0}
+.layer .tags span.eol::after{display:none}
+.layer:hover .tags span,.layer:hover h3{color:var(--text-primary)}
+@media (max-width:900px){
+  .stack-head{flex-wrap:wrap}
+  .stack-head h2{text-align:left;margin-left:0}
+  .layer.top,.layer.mid-a,.layer.mid-b,.layer.base{grid-column:1/13;grid-row:auto}
+  .layer.mid-b{border-left:0;padding-left:0}
+  .layer.base{margin-inline:0}
+}
+
+/* The record: the enormous steel 9,227, then the education colophon. */
+.wins-head{display:flex;align-items:center;gap:18px}
+.wins-head .kick{margin-bottom:0}
+.wins-head::after{content:"";flex:1;height:1px;background:var(--line)}
+.wins-spread{display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(20px,3vw,40px);margin-top:clamp(28px,5vh,80px)}
+.win-a{grid-column:1/8}
+.win-b{grid-column:9/13;padding-top:clamp(48px,10vw,140px)}
+.num-row{display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.num-row .digits{flex-shrink:0}
+.digits{display:inline-flex;overflow:hidden;padding-right:.08em}
+.win-a .digits{font-family:var(--display);font-weight:600;font-size:min(clamp(100px,16vw,200px),24vh);line-height:.92;letter-spacing:-.015em;font-variant-numeric:tabular-nums;transform:scale(calc(.72 + .28*clamp(0,calc(var(--pp,1)*2.4),1)));transform-origin:left bottom}
+.win-b .digits{font-family:var(--display);font-weight:600;font-size:min(clamp(54px,7vw,96px),12vh);line-height:.92;letter-spacing:-.015em;font-variant-numeric:tabular-nums}
+.d{color:var(--text-primary)}
+@supports(-webkit-background-clip:text){
+  .d{background:linear-gradient(180deg,#E9F2F4 28%,#8FA5B5);-webkit-background-clip:text;background-clip:text;color:transparent}
+}
+.unit{font-family:var(--mono);font-size:11px;letter-spacing:.18em;color:var(--text-secondary);margin-top:.9em;transition:color .4s var(--ease)}
+.win-a:hover .unit,.win-b:hover .unit{color:var(--accent)}
+.win-a h3,.win-b h3{font-weight:500;font-size:clamp(18px,2vw,23px);margin-top:20px;max-width:26ch}
+.win-a p.wcopy,.win-b p.wcopy{margin-top:8px;color:var(--text-secondary);font-size:15px;max-width:44ch}
+/* the numerals hold perfectly still after entrance. The stillness is deliberate: do not add a pulse. */
+.d{transform:translateY(calc((1 - var(--dk,1))*110%));opacity:var(--dk,1)}
+.d:nth-child(1){--dk:clamp(0,calc(var(--pp,1)*4),1)}
+.d:nth-child(2){--dk:clamp(0,calc((var(--pp,1) - .06)*4),1)}
+.d:nth-child(3){--dk:clamp(0,calc((var(--pp,1) - .12)*4),1)}
+.d:nth-child(4){--dk:clamp(0,calc((var(--pp,1) - .18)*4),1)}
+.d:nth-child(5){--dk:clamp(0,calc((var(--pp,1) - .24)*4),1)}
+.win-a .unit,.win-a h3,.win-a .wcopy{--wk:clamp(0,calc((var(--pp,1) - .3)*3),1);opacity:var(--wk);transform:translateY(calc((1 - var(--wk))*14px))}
+.win-b .unit,.win-b h3,.win-b .wcopy{--wk:clamp(0,calc((var(--pp,1) - .55)*3),1);opacity:var(--wk);transform:translateY(calc((1 - var(--wk))*14px))}
+.win-b .digits .d{--dk:clamp(0,calc((var(--pp,1) - .45)*4),1)}
+.wins-head{opacity:clamp(0,calc(var(--pp,1)*6),1)}
+@media (max-width:760px){
+  .win-a,.win-b{grid-column:1/13}
+  .win-b{padding-top:clamp(40px,10vw,64px)}
+}
+/* Education: the colophon. One drawn rule; restraint is the gesture. */
+.edu-line{position:relative;display:grid;grid-template-columns:repeat(12,1fr);column-gap:clamp(20px,3vw,40px);row-gap:6px;padding-top:20px}
+.edu-line::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:var(--line);transform:scaleX(var(--k,1));transform-origin:left}
+.edu-line>*{opacity:var(--k,1)}
+.edu-line .kick{grid-column:1/3;margin:0}
+.edu-line h3{grid-column:3/9;font-weight:500;font-size:clamp(20px,2.6vw,28px)}
+.edu-line .when{grid-column:10/13;justify-self:end;font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary)}
+.edu-line p{grid-column:3/9;grid-row:2;font-size:15px;color:var(--text-secondary)}
+.cgpa{display:block;margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--text-primary)}
+@media (max-width:760px){
+  .edu-line{display:block}
+  .edu-line .when{margin-top:2px;display:block;text-align:left;justify-self:start}
+  .edu-line h3{margin-top:10px}
+  .edu-line p{margin-top:8px}
+}
+
+/* CTA: the biggest type below the film asks; one oversized control answers. */
+#contact .wrap{max-width:1240px;display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(18px,2.5vw,32px)}
+.cta-h{grid-column:1/11;grid-row:1;font-size:min(clamp(44px,6.6vw,96px),11vh);font-weight:600;line-height:1.04;letter-spacing:-.01em;max-width:none;margin:0}
+.cta-h .hl{display:block;overflow:hidden}
+.cta-h .hli{display:block}
+.cta-note{grid-column:10/13;grid-row:1;align-self:end;font-family:var(--body);font-weight:500;font-size:clamp(17px,1.8vw,22px);color:var(--text-secondary);max-width:16ch}
+.cta-note::before{content:"";display:block;width:34px;height:1px;background:var(--accent);margin-bottom:14px}
+.cta-row{grid-column:1/13;margin-top:clamp(44px,7vh,84px);display:grid;grid-template-columns:auto auto 1fr;gap:16px;align-items:center}
+.answer-strip{grid-column:1/-1;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:clamp(18px,3vw,40px);height:clamp(84px,12vh,128px);padding:0 clamp(20px,3vw,40px);border-radius:14px;text-decoration:none;background:linear-gradient(165deg,rgba(13,20,31,.85),rgba(10,17,27,.55));border:1px solid var(--line);position:relative;overflow:hidden;transition:transform .4s var(--ease),border-color .4s var(--ease)}
+.answer-strip::after{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(79,227,193,.5),transparent)}
+.answer-strip:hover{transform:translateY(-2px);border-color:rgba(79,227,193,.45)}
+.answer-strip .lab{font-family:var(--display);font-weight:500;font-size:clamp(22px,3vw,36px);color:var(--text-primary)}
+.line-bars{display:flex;align-items:center;justify-content:space-between;height:100%;min-width:0}
+.line-bars span{width:2px;border-radius:1px;background:rgba(79,227,193,.45);opacity:.3;transform:scaleY(1);transform-origin:center;transition:transform .45s var(--ease)}
+.answer-strip:hover .line-bars span,.answer-strip:focus-visible .line-bars span{transform:scaleY(var(--k,2))}
+.answer-strip .arr{color:var(--text-secondary);transition:transform .4s var(--ease)}
+.answer-strip:hover .arr{transform:translate(3px,-3px)}
+.cta-ghosts{display:contents}
+#contact .btn.ghost{font-size:13.5px;padding:9px 16px}
+.cta-row .fine{justify-self:end;margin:0;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-secondary)}
+.cta-h .hli{transform:translateY(calc((1 - var(--k,1))*112%))}
+@media (max-width:1100px){
+  .cta-h{grid-column:1/13;font-size:clamp(44px,7.4vw,84px)}
+  .cta-note{grid-column:1/13;grid-row:2;margin-top:18px;max-width:34ch}
+  .cta-row{grid-template-columns:1fr;gap:14px}
+  .cta-row .fine{justify-self:start}
+}
+@media (max-width:560px){
+  .line-bars{display:none}
+  .answer-strip{height:clamp(64px,9vh,88px);grid-template-columns:auto auto;justify-content:space-between}
+}
+
+/* Footer: the settle frame at rest. The carrier line, flat; the mark on it. */
+footer{position:relative;z-index:2;background:transparent;border-top:0;padding:clamp(90px,14vh,150px) clamp(20px,6vw,72px) 44px}
+.settle-mark{display:flex;justify-content:center;margin-bottom:26px}
+#footmark rect{fill:var(--accent)}
+footer.alive #footmark{animation:markbreathe 6s var(--ease2) -1.5s infinite}
+@keyframes markbreathe{0%,100%{opacity:.55}50%{opacity:.9}}
+.horizon{position:relative;left:50%;transform:translateX(-50%);width:100vw;height:1px;background:linear-gradient(90deg,transparent,rgba(147,167,184,.28) 18% 82%,transparent)}
+.horizon::after{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:min(680px,80vw);height:180px;pointer-events:none;background:radial-gradient(ellipse 50% 100% at 50% 0%,rgba(79,227,193,.07),transparent 70%)}
+.foot-row{max-width:1240px;margin:clamp(56px,9vh,110px) auto 0;display:flex;flex-wrap:wrap;gap:14px 30px;align-items:center}
+footer .mono a{color:inherit;text-decoration:none}
+footer .mono a:hover{color:var(--accent)}
+footer .spread{margin-left:auto;display:flex;gap:22px;flex-wrap:wrap}
+.horizon{opacity:var(--k,1);transform:translateX(-50%) scaleX(calc(.15 + .85*var(--k,1)))}
+
+/* ---------- pinned set pieces below the film ----------
+   The film's own mechanic, reused: a tall runway section with a sticky
+   100vh stage inside it. Scroll progress through the runway (--pp, 0 to 1)
+   drives the whole choreography as a pure function, so it scrubs forward,
+   rewinds backward, and pins to 1 under reduced motion or without JS.
+   Under 900px the runway collapses and the same choreography plays as a
+   flowing scrub instead of a pin. */
+.pin-sec{position:relative}
+@media (min-width:900px){
+  .pin-sec{height:var(--pinh,260vh);padding-top:0!important;padding-bottom:0!important}
+  .pin-stage{position:sticky;top:0;height:100vh;display:flex;flex-direction:column;overflow:hidden;padding-top:max(76px,min(8vh,100px));padding-bottom:18px}
+  .pin-stage>*{margin-top:auto;margin-bottom:auto}
+}
+@media (max-width:899px),(prefers-reduced-motion:reduce){
+  .pin-sec{height:auto!important}
+  .pin-stage{position:static;min-height:0}
+}
+@media (prefers-reduced-motion:reduce){.pin-sec{--pp:1!important}}
+
+/* ---------- scroll scrub for the page below the film ----------
+   Each [data-scrub] element owns a --sp custom property, 0 to 1 across half a
+   viewport of its own travel, written by the scrub driver and delta-gated.
+   The var() fallback is 1: without JavaScript everything sits in its final
+   state, and reduced motion pins the same way. Scrolling back disassembles,
+   the same grammar as the film. */
+[data-scrub]{--k:clamp(0,calc((var(--sp,1) - var(--o,0))*var(--v,2.2)),1)}
+/* one-shot reveals: titles blur in line by line, items rise into place */
+.rvl{opacity:0;transform-origin:0 60%}
+.exp-head .rvl,.stack-head .rvl{transform-origin:100% 60%}
+.rv .rvl{animation:rvLine .85s cubic-bezier(.16,1,.3,1) var(--rvd,0s) forwards}
+@keyframes rvLine{from{opacity:0;filter:blur(10px);transform:scale(1.13)}to{opacity:1;filter:blur(0);transform:scale(1)}}
+.rvu{opacity:0;transform:translateY(28px)}
+.rv .rvu,.rv.rvu{opacity:1;transform:none;transition:opacity .65s ease var(--rvd,0s),transform .65s ease var(--rvd,0s)}
+@media (prefers-reduced-motion:reduce){.rvl,.rvu{opacity:1;transform:none;filter:none}.rv .rvl{animation:none}.rv .rvu,.rv.rvu{transition:none}}
+@media (max-width:899px){
+  .slide[data-rv]{opacity:0;transform:translateY(30px)}
+  .slide[data-rv].rv{opacity:1;transform:none;transition:opacity .65s ease,transform .65s ease}
+  .slide[data-rv].rv>*{opacity:1;transform:none}
+}
+.s-rise{opacity:var(--k);transform:translateY(calc((1 - var(--k))*28px))}
+.s-drop{opacity:var(--k);transform:translateY(calc((1 - var(--k))*-18px))}
+.s-drift{transform:translateY(calc((1 - var(--sp,1))*var(--dr,40px)))}
+
+/* ---------- entrances: choreography, then retire the delays ---------- */
+.io{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.io.in{opacity:1;transform:none}
+.io .part{opacity:0;transform:translateY(18px)}
+.io.in .part{opacity:1;transform:none;transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.io.in .part:nth-child(2){transition-delay:.08s}
+.io.in .part:nth-child(3){transition-delay:.16s}
+.io.in .part:nth-child(4){transition-delay:.24s}
+.io.in .part:nth-child(5){transition-delay:.32s}
+.io.in.settled .part:nth-child(n){transition-delay:0s}
+
+/* one living element per section, whisper level, paused when unseen */
+.pulse{position:relative}
+.alive .pulse::after{content:"";position:absolute;inset:-2px;border-radius:inherit;box-shadow:0 0 26px var(--accent-muted);opacity:.5;animation:breathe 5.2s var(--ease2) -1.6s infinite;pointer-events:none}
+@keyframes breathe{0%,100%{opacity:.22}50%{opacity:.6}}
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused!important}
+
+/* short screens: hide small overlays, keep the scrub */
+@media (max-height:560px){.ring,.chev{display:none}}
+
+/* ---------- the five static-hero gates: identical strings in JS ---------- */
+@media (max-width: 720px),(orientation: portrait) and (max-width: 1024px),(orientation: portrait) and (pointer: coarse),(orientation: landscape) and (pointer: coarse) and (max-height: 560px),(prefers-reduced-motion: reduce){
+  .hero{height:auto}
+  .stage,.stage video,.ring,.chev{display:none}
+  .static-hero{display:flex}
+}
+
+/* reduced motion: finished states, nothing moving, positions kept */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  [data-scrub]{--sp:1!important}
+  .runway{--np:1!important}
+  .io,.io .part{opacity:1;transform:none}
+  .io .layer,.io .d,.io .role .bar,.io .role .rtext,.io .nowline,.io .nowdot,.io .cta-h .hli,.io .settle-mark,.io .foot-row{opacity:1;transform:none}
+  .io .horizon{opacity:1;transform:translateX(-50%) scaleX(1)}
+  .about-kick::after,.axis::before,.edu-line::before,.lrow::before{transform:none}
+  .divider .bar{transform:scaleY(1)}
+  .io.in .nowline{opacity:.55}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<canvas id="env" aria-hidden="true"></canvas>
+
+<nav aria-label="Primary">
+  <a class="wordmark" href="#top">
+    <svg width="22" height="22" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" fill="#0D141F"/><g fill="#4FE3C1"><rect x="6" y="14" width="2.4" height="4" rx="1.2"/><rect x="10" y="11" width="2.4" height="10" rx="1.2"/><rect x="14" y="7" width="2.4" height="18" rx="1.2"/><rect x="18" y="11" width="2.4" height="10" rx="1.2"/><rect x="22" y="14" width="2.4" height="4" rx="1.2"/></g></svg>
+    Anubhav Tripathi
+  </a>
+  <div class="links">
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a class="cta-mini keep" href="#contact">Email me</a>
+  </div>
+</nav>
+
+<!-- ============ THE FLIGHT ============ -->
+<header id="top" class="hero" aria-label="Introduction">
+  <div class="stage" id="stage">
+    <div class="poster" id="poster"></div>
+    <video id="hero" preload="none" muted playsinline aria-hidden="true" tabindex="-1"></video>
+    <div class="scrim" aria-hidden="true"></div>
+
+    <div class="band" data-pos="b1" data-a="0" data-b="0.12" data-fx="rise" style="--sx:28%;--sy:34%;--sa:.62">
+      <div class="inner">
+        <p class="kicker" data-split>Senior AI/ML Engineer, UltraSafe AI</p>
+        <h1 data-split>Anubhav Tripathi</h1>
+      </div>
+    </div>
+    <div class="band" data-pos="b2" data-a="0.15" data-b="0.26" data-fx="scatter" style="--sx:50%;--sy:30%;--sa:.62">
+      <div class="inner"><p class="line" data-split>Voice agents that answer real phone calls.</p></div>
+    </div>
+    <div class="band" data-pos="b3" data-a="0.30" data-b="0.455" data-fx="depth" style="--sx:26%;--sy:50%;--sa:.66">
+      <div class="inner"><p class="line" data-split>Open models, fine-tuned into domain experts.</p></div>
+    </div>
+    <div class="band" data-pos="b4" data-a="0.455" data-b="0.60" data-fx="grid" style="--sx:74%;--sy:50%;--sa:.76">
+      <div class="inner"><p class="line" data-split>Two years shipping LLM systems into government, healthcare, and enterprise.</p></div>
+    </div>
+    <div class="band" data-pos="b5" data-a="0.58" data-b="0.74" data-fx="weave" style="--sx:26%;--sy:66%;--sa:.78">
+      <div class="inner"><p class="line" data-split>Retrieval that puts the right record in front of the right person.</p></div>
+    </div>
+    <div class="band" data-pos="b6" data-a="0.74" data-b="1" data-fx="settle" style="--sx:50%;--sy:30%;--sa:.58">
+      <div class="inner">
+        <p class="line" id="settleHead" data-split>Fine-tuning. Retrieval. Realtime voice.</p>
+        <p class="sub" id="settleSub">Shipped where it has to work.</p>
+        <div class="cta-row" id="settleCta">
+          <a class="btn primary" href="#work">See the work</a>
+          <a class="btn ghost" href="#contact">Email me</a>
+        </div>
+      </div>
+    </div>
+
+    <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3" stroke-dasharray="126" style="stroke-dashoffset:var(--ld,126)"/></svg>
+  </div>
+
+  <!-- phones, portrait tablets, reduced motion: the composed still -->
+  <div class="static-hero">
+    <div class="veil" aria-hidden="true"></div>
+    <div class="inner">
+      <p class="kicker" style="font-family:var(--mono);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px">Senior AI/ML Engineer, UltraSafe AI</p>
+      <h1>Anubhav Tripathi</h1>
+      <p class="sub">Fine-tuning, retrieval, and realtime voice, shipped into real environments.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="#work">See the work</a>
+        <a class="btn ghost" href="#contact">Email me</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" aria-label="About">
+    <div class="wrap">
+      <div class="about-stage" data-rv>
+        <p class="about-kick rvu">About</p>
+        <h2 class="head about-head"><span class="hl rvl">I take open models</span> <span class="hl hl2 rvl" style="--rvd:.12s">and make them experts.</span></h2>
+        <div class="portrait rvu" style="--rvd:.3s" role="img" aria-label="Portrait placeholder, photo coming soon">
+          <svg class="corners" viewBox="0 0 320 410" preserveAspectRatio="none" aria-hidden="true">
+            <path class="c-tl" d="M2 14 L2 2 L14 2"/>
+            <path class="c-tr" d="M306 2 L318 2 L318 14"/>
+            <path class="c-bl" d="M2 396 L2 408 L14 408"/>
+            <path class="c-br" d="M318 396 L318 408 L306 408"/>
+          </svg>
+          <svg class="plate-mark" width="96" height="52" viewBox="0 0 96 52" aria-hidden="true">
+            <rect x="6" y="22" width="6" height="8" rx="3"/>
+            <rect x="26" y="16" width="6" height="20" rx="3"/>
+            <rect x="46" y="8" width="6" height="36" rx="3"/>
+            <rect x="66" y="16" width="6" height="20" rx="3"/>
+            <rect x="86" y="22" width="6" height="8" rx="3"/>
+          </svg>
+          <span class="cap">
+            <span class="tag">Photo coming soon</span>
+            <span class="spec">Portrait, 4:5, on a dark ground</span>
+          </span>
+        </div>
+        <p class="about-body rvu" style="--rvd:.18s">Fine-tuning with SFT and LoRA, retrieval that holds up against real data, and voice agents that speak and listen at the same time. Based in Mumbai, working with the Dubai team at UltraSafe AI.</p>
+        <dl class="facts">
+          <div class="rvu" style="--rvd:.38s"><dt>Based</dt><dd>Mumbai, India</dd></div>
+          <div class="rvu" style="--rvd:.46s"><dt>Working</dt><dd>UltraSafe AI, hybrid with the Dubai team</dd></div>
+          <div class="rvu" style="--rvd:.54s"><dt>Since</dt><dd>September 2024</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" data-env="pulse" aria-hidden="true"></div>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience" aria-label="Experience" class="pin-sec" style="--pinh:280vh">
+    <div class="pin-stage"><div class="wrap">
+      <div class="exp-head" data-rv>
+        <p class="kick rvu">Experience</p>
+        <span class="rule" aria-hidden="true"></span>
+        <h2 class="head rvl">Where the work shipped.</h2>
+      </div>
+      <div class="runway">
+        <div class="axis" aria-hidden="true">
+          <i class="t0" style="left:0">Sep 2024</i>
+          <i class="t1" style="left:16.667%">2025</i>
+          <i class="t2" style="left:66.667%">2026</i>
+          <i class="t3" style="right:0">present</i>
+        </div>
+        <div class="nowline" aria-hidden="true"></div>
+        <div class="playhead" aria-hidden="true"></div>
+        <article class="role role--ultra now">
+          <span class="bar" aria-hidden="true"></span>
+          <span class="nowdot" aria-hidden="true" style="top:11px"></span>
+          <div class="rtext">
+            <span class="when">Mar 2026 to present</span>
+            <div class="top"><h3>Senior AI/ML Engineer</h3><a class="co" href="https://us.inc/" target="_blank" rel="noopener">UltraSafe AI</a></div>
+            <p class="where">Dubai, UAE. Hybrid from Mumbai</p>
+            <p class="desc">Duplex audio and agent orchestration behind UltraVoice, on a stack where the LLM, TTS and STT are built in-house.</p>
+          </div>
+        </article>
+        <article class="role role--nimap">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="rtext">
+            <span class="when">Feb 2025 to Feb 2026</span>
+            <div class="top"><h3>AI/ML Engineer</h3><span class="co">Nimap Infotech</span></div>
+            <p class="where">Mumbai, India</p>
+            <p class="desc">Client-facing delivery of LLM systems for UAE government, US healthcare and enterprise. Expert models, RAG, tool-augmented workflows.</p>
+          </div>
+        </article>
+        <article class="role role--soft">
+          <span class="bar" aria-hidden="true"></span>
+          <div class="rtext">
+            <span class="when">Sep 2024 to Jan 2025</span>
+            <div class="top"><h3>Software Engineer, contract</h3><span class="co">SoftDigits</span></div>
+            <p class="where">Remote</p>
+            <p class="desc">GAN-based image authentication in PyTorch, deployed as a REST API.</p>
+          </div>
+        </article>
+      </div>
+    </div></div>
+  </section>
+
+  <div class="divider" data-env="speech" aria-hidden="true"></div>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="work" aria-label="Selected work" class="pin-sec" style="--pinh:500vh">
+    <div class="pin-stage"><div class="work-wrap">
+      <div class="work-head" data-rv>
+        <h2 class="head"><span class="wl rvl">Four systems,</span> <span class="wl wl2 rvl" style="--rvd:.12s">newest first.</span></h2>
+        <p class="kick rvu" style="--rvd:.3s">Selected work</p>
+      </div>
+
+      <div class="deck">
+      <div class="deck-rail" aria-hidden="true"><i>01</i><i>02</i><i>03</i><i>04</i></div>
+      <article class="flag slide s1 live" id="uvCard" data-rv>
+        <div class="fmeta">
+          <span class="role-tag">Voice AI</span><span class="year">2026, UltraSafe AI</span>
+          <a class="visit" href="https://ultravoice.us.inc/" target="_blank" rel="noopener">ultravoice.us.inc
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 10 L10 2 M4 2 h6 v6"/></svg>
+          </a>
+        </div>
+        <div class="fbody">
+          <span class="num-ghost" aria-hidden="true">01</span>
+          <div>
+            <h3>UltraVoice</h3>
+            <p class="blurb">Voice agents that answer real phone calls, on a stack where the LLM, TTS and STT are all owned in-house.</p>
+          </div>
+          <div>
+            <ul class="evi">
+              <li>Architected the duplex audio path: streaming STT in, streaming TTS out, barge-in throughout</li>
+              <li>Built the concurrency and back-off layer so calls degrade gracefully under TTS rate limits</li>
+              <li>Owned agent orchestration: state, tool calls, retries, mid-call recovery</li>
+            </ul>
+            <div class="stack"><span>Streaming STT</span><span>Neural TTS</span><span>WebSockets</span><span>Python</span><span>Telephony</span></div>
+          </div>
+        </div>
+        <div class="console">
+          <p class="hold-note">Try the idea: press and hold, and the agent yields the line to you</p>
+          <button id="holdBtn" type="button" aria-describedby="holdState">Barge in</button>
+          <canvas id="holdWave" width="600" height="112" aria-hidden="true"></canvas>
+          <p id="holdState" class="sr" aria-live="polite">Not started</p>
+        </div>
+      </article>
+
+        <article class="flag slide s2" data-rv>
+          <div class="fmeta">
+            <span class="role-tag">RAG</span><span class="year">2025, US client</span>
+          </div>
+          <div class="fbody">
+            <span class="num-ghost" aria-hidden="true">02</span>
+            <div>
+              <h3>Patient report retrieval</h3>
+              <p class="blurb">A RAG pipeline giving clinicians patient records in seconds.</p>
+            </div>
+            <div>
+            <ul class="evi">
+              <li>Retrieval across structured and unstructured patient data</li>
+              <li>Semantic search by patient name, ID or mobile number</li>
+              <li>Backend validation over LLM output for access-controlled medical data</li>
+            </ul>
+            <div class="stack"><span>RAG</span><span>Embeddings</span><span>Vector search</span><span>PostgreSQL</span><span>Django REST</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="flag slide s3" data-rv>
+          <div class="fmeta">
+            <span class="role-tag">Expert model</span><span class="year">2025, UAE</span>
+          </div>
+          <div class="fbody">
+            <span class="num-ghost" aria-hidden="true">03</span>
+            <div>
+              <h3>Dubai Government service classification</h3>
+              <p class="blurb">A fine-tuned expert model routing government service requests to the right department.</p>
+            </div>
+            <div>
+            <ul class="evi">
+              <li>Instruction datasets built from labelled UAE government service descriptions</li>
+              <li>SFT with PEFT and LoRA for task-specific domain adaptation</li>
+              <li>Constrained inference prompts for deterministic, high-precision classification</li>
+            </ul>
+            <div class="stack"><span>SFT</span><span>PEFT / LoRA</span><span>Dataset preparation</span><span>Constrained inference</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="flag slide s4" data-rv>
+          <div class="fmeta">
+            <span class="role-tag">Computer vision</span><span class="year">2024, SoftDigits</span>
+          </div>
+          <div class="fbody">
+            <span class="num-ghost" aria-hidden="true">04</span>
+            <div>
+              <h3>Image-based authentication</h3>
+              <p class="blurb">A GAN-based authentication model, trained in PyTorch and deployed behind a REST API for external client integration.</p>
+            </div>
+            <div>
+              <div class="stack"><span>GAN</span><span>PyTorch</span><span>REST API</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div></div>
+  </section>
+
+  <div class="divider" data-env="hum" aria-hidden="true"></div>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" aria-label="Skills" class="pin-sec" style="--pinh:240vh">
+    <div class="pin-stage"><div class="wrap">
+      <div class="stack-head" data-rv>
+        <p class="kick rvu">The stack</p>
+        <h2 class="head rvl">What the work<br>runs on.</h2>
+      </div>
+      <div class="stack">
+        <div class="layer top"><h3>Models and agents</h3><div class="tags"><span>SFT</span><span>PEFT / LoRA</span><span>Expert models</span><span>Dataset preparation</span><span>Agent workflows</span><span>Prompt engineering</span><span>Tool calling</span><span>LangChain</span><span>LangGraph</span></div></div>
+        <div class="layer mid-a"><h3>Retrieval and data</h3><div class="tags"><span>Embeddings</span><span>Vector search</span><span>Redis</span><span>PostgreSQL</span><span>MySQL</span></div></div>
+        <div class="layer mid-b"><h3>Voice</h3><div class="tags"><span>Streaming STT</span><span>Neural TTS</span><span>Barge-in and endpointing</span><span>Telephony transport</span><span>WebSockets</span></div></div>
+        <div class="layer base"><h3>Serving and backend</h3><div class="tags"><span>vLLM</span><span>TGI</span><span>GPU serving</span><span>Open-source inference</span><span>AWS EC2 and S3</span><span>Docker</span><span>Python</span><span>Django REST</span><span>FastAPI</span><span>SQL</span></div></div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="wins" aria-label="Achievements" class="pin-sec" style="--pinh:220vh">
+    <div class="pin-stage"><div class="wrap">
+      <div class="wins-head" data-rv><p class="kick rvu">Achievements</p></div>
+      <div class="wins-spread">
+        <div class="win-a">
+          <p class="num-line">
+            <span class="sr">9,227 TEAMS</span>
+            <span class="num-row" aria-hidden="true">
+              <span class="digits"><span class="d">9</span><span class="d">,</span><span class="d">2</span><span class="d">2</span><span class="d">7</span></span>
+              <small class="unit">TEAMS</small>
+            </span>
+          </p>
+          <h3>District Winner, Maharashtra Student Innovation Challenge</h3>
+          <p class="wcopy">Raigad district. Selected from 9,227 teams by the Maharashtra State Innovation Society.</p>
+        </div>
+        <div class="win-b">
+          <p class="num-line">
+            <span class="sr">800+ PARTICIPANTS</span>
+            <span class="num-row" aria-hidden="true">
+              <span class="digits"><span class="d">800+</span></span>
+              <small class="unit">PARTICIPANTS</small>
+            </span>
+          </p>
+          <h3>Winner, Technoscope 2024</h3>
+          <p class="wcopy">First place among more than eight hundred participants.</p>
+        </div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" aria-label="Education">
+    <div class="wrap">
+      <div class="edu-line" data-scrub>
+        <p class="kick">Education</p>
+        <h3>B.E. Computer Engineering</h3>
+        <span class="when">2021 to 2025</span>
+        <p><span>Anjuman-I-Islam's Kalsekar Technical Campus, Navi Mumbai. </span><span class="cgpa">CGPA 7.52 of 10.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section id="contact" aria-label="Contact">
+    <div class="wrap" data-rv>
+      <h2 class="cta-h"><span class="hl"><span class="hli rvl">Have a hard</span></span><span class="hl"><span class="hli rvl" style="--rvd:.12s">model, voice, or</span></span><span class="hl"><span class="hli rvl" style="--rvd:.24s">retrieval problem?</span></span></h2>
+      <p class="cta-note rvu" style="--rvd:.45s">I answer email fastest.</p>
+      <div class="cta-row rvu" style="--rvd:.55s">
+        <a class="answer-strip" href="mailto:anubhavtripathi0509@gmail.com?subject=Project%20inquiry">
+          <span class="lab">Email me</span>
+          <span class="line-bars" aria-hidden="true"></span>
+          <svg class="arr" width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 16 L16 4 M7 4 h9 v9"/></svg>
+        </a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/anubhavtripathi-ai" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" aria-disabled="true" role="link" tabindex="0" title="An updated CV is being prepared">CV coming soon</a>
+        <p class="fine">The email button opens your own mail app, addressed to me.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer data-rv>
+  <div class="settle-mark rvu" aria-hidden="true">
+    <svg id="footmark" width="48" height="30" viewBox="0 0 48 30" aria-hidden="true">
+      <rect x="2" y="12" width="4" height="6" rx="2"/>
+      <rect x="12" y="8" width="4" height="14" rx="2"/>
+      <rect x="22" y="3" width="4" height="24" rx="2"/>
+      <rect x="32" y="8" width="4" height="14" rx="2"/>
+      <rect x="42" y="12" width="4" height="6" rx="2"/>
+    </svg>
+  </div>
+  <div class="horizon" data-scrub style="--o:.1" aria-hidden="true"></div>
+  <div class="foot-row rvu" style="--rvd:.2s">
+    <p class="mono">Anubhav Tripathi. Senior AI/ML Engineer, UltraSafe AI.</p>
+    <div class="spread mono">
+      <a href="https://github.com/anubhavtripathi0509" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/anubhavtripathi-ai" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:anubhavtripathi0509@gmail.com">Email</a>
+      <a href="llms.txt">llms.txt</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+/* ============================================================
+   The scrub engine and the page choreography.
+   Every rule here is the standard from the build's design package:
+   streamed Blob with a ring, a lerp loop that rests, gated seeks,
+   delta-gated DOM writes, five live static-hero gates, and a page
+   that is complete if the video never arrives.
+   ============================================================ */
+
+var VIDEO_URL='assets/hero-scrub-2.mp4';
+var VIDEO_BYTES=9941070;
+var video=document.getElementById('hero');
+var stage=document.getElementById('stage');
+var hero=document.getElementById('top');
+var posterLayer=document.getElementById('poster');
+var ring=document.querySelector('.ring');
+
+var clamp=function(v,a,b){return Math.min(b,Math.max(a,v))};
+var smoothstep=function(p,e0,e1){var t=clamp((p-e0)/(e1-e0),0,1);return t*t*(3-2*t)};
+
+/* ---------- seeded splitter: identical offsets every load ---------- */
+function rng(seed){var s=seed>>>0;return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
+var bands=[];
+document.querySelectorAll('.band').forEach(function(el,bi){
+  var R=rng(1000+bi*77);
+  el.querySelectorAll('[data-split]').forEach(function(node){
+    var text=node.textContent;
+    var sr=document.createElement('span');sr.className='sr';sr.textContent=text;
+    var vis=document.createElement('span');vis.setAttribute('aria-hidden','true');
+    text.split(' ').forEach(function(word,wi,arr){
+      var w=document.createElement('span');w.className='w';
+      for(var ci=0;ci<word.length;ci++){
+        var c=document.createElement('span');c.className='c';c.textContent=word[ci];
+        c.style.setProperty('--th',(R()*0.55).toFixed(3));
+        c.style.setProperty('--jx',((R()*2-1)*46).toFixed(1)+'px');
+        c.style.setProperty('--jy',((R()*2-1)*34).toFixed(1)+'px');
+        c.style.setProperty('--ow',(wi/arr.length*0.5).toFixed(3));
+        vis.appendChild(c);w.appendChild(c);
+      }
+      w.style.setProperty('--wth',(wi/Math.max(1,arr.length-1)*0.55).toFixed(3));
+      vis.appendChild(w);
+      if(wi<arr.length-1){var sp=document.createElement('span');sp.className='c';sp.textContent=' ';vis.appendChild(sp);w.appendChild(sp)}
+    });
+    node.textContent='';node.appendChild(sr);node.appendChild(vis);
+  });
+  bands.push({el:el,a:+el.dataset.a,b:+el.dataset.b,fx:el.dataset.fx,op:-1,k:-1});
+});
+
+/* entrance math per band, all transform and opacity, reversible */
+function applyFx(band,k){
+  var cs=band.el.querySelectorAll('.c'),ws=band.el.querySelectorAll('.w'),i,el,th,kc;
+  if(band.fx==='scatter'||band.fx==='rise'){
+    for(i=0;i<cs.length;i++){el=cs[i];th=+el.style.getPropertyValue('--th');
+      kc=clamp((k-th)*2.6,0,1);
+      var jx=parseFloat(el.style.getPropertyValue('--jx'))||0;
+      var jy=parseFloat(el.style.getPropertyValue('--jy'))||0;
+      if(band.fx==='rise'){jx=0;jy=Math.abs(jy)}
+      el.style.opacity=kc;
+      el.style.transform='translate('+((1-kc)*jx)+'px,'+((1-kc)*jy)+'px)';
+    }
+  }else if(band.fx==='depth'){
+    var sc=0.82+0.18*k;
+    for(i=0;i<cs.length;i++){el=cs[i];th=+el.style.getPropertyValue('--th')*0.5;
+      kc=clamp((k-th)*2.4,0,1);el.style.opacity=kc;el.style.transform='scale('+sc+')'}
+  }else if(band.fx==='grid'){
+    for(i=0;i<cs.length;i++){el=cs[i];th=+el.style.getPropertyValue('--ow');
+      kc=clamp((k-th)*2.8,0,1);el.style.opacity=kc;
+      el.style.transform='translateX('+((1-kc)*38)+'px)'}
+  }else if(band.fx==='weave'){
+    for(i=0;i<cs.length;i++){el=cs[i];th=+el.style.getPropertyValue('--th')*0.6;
+      kc=clamp((k-th)*2.6,0,1);el.style.opacity=kc;
+      el.style.transform='translateY('+((1-kc)*(i%2?26:-26))+'px)'}
+  }else if(band.fx==='settle'){
+    for(i=0;i<ws.length;i++){el=ws[i];th=+el.style.getPropertyValue('--wth');
+      kc=clamp((k-th)*3,0,1);el.style.opacity=kc;
+      el.style.transform='translateY('+((1-kc)*22)+'px)'}
+    var sub=document.getElementById('settleSub'),cta=document.getElementById('settleCta');
+    var ks=clamp((k-0.62)*4,0,1),kb=clamp((k-0.76)*5,0,1);
+    sub.style.opacity=ks;sub.style.transform='translateY('+((1-ks)*14)+'px)';
+    cta.style.opacity=kb;cta.style.transform='translateY('+((1-kb)*14)+'px)';
+  }
+}
+
+/* ---------- band drive with delta-gated writes ---------- */
+var loadK=0,loadT0=0;
+function updateCaptions(p){
+  for(var i=0;i<bands.length;i++){
+    var band=bands[i],a=band.a,b=band.b;
+    var f=Math.min(0.02,(b-a)/3);
+    /* the first band opens settled and the last never fades out */
+    var intro=(i===0)?1:smoothstep(p,a,a+f);
+    var outro=(i===bands.length-1)?0:smoothstep(p,b-f,b);
+    var op=intro*(1-outro);
+    var ramp=Math.min(0.025,(b-a)*0.35);
+    var k=clamp((p-a)/ramp,0,1);
+    if(i===0){k=Math.max(k,loadK)}
+    if(Math.abs(op-band.op)>0.004){band.op=op;band.el.style.opacity=op}
+    if(Math.abs(k-band.k)>0.008){band.k=k;band.el.style.setProperty('--k',k.toFixed(3));applyFx(band,k)}
+  }
+}
+
+/* ---------- progress, lerp loop that rests, gated seeks ---------- */
+function heroProgress(){
+  var r=hero.getBoundingClientRect();
+  var range=r.height-innerHeight;
+  return range>0?clamp(-r.top/range,0,1):0;
+}
+var target=0,shown=0,rafId=null,lastTick=0,heroOnScreen=true;
+function tick(now){
+  var dt=Math.min(100,now-(lastTick||now));lastTick=now;
+  var k=0.16;
+  shown+=(target-shown)*(1-Math.pow(1-k,dt/16.667));
+  if(Math.abs(target-shown)<0.0005){shown=target;rafId=null;lastTick=0}
+  else{rafId=requestAnimationFrame(tick)}
+  if(video.duration){requestSeek(shown*video.duration)}
+  updateCaptions(shown);
+}
+function onScroll(){
+  target=heroProgress();
+  if(rafId===null&&heroOnScreen){rafId=requestAnimationFrame(tick)}
+}
+new IntersectionObserver(function(es){heroOnScreen=es[0].isIntersecting},{rootMargin:'60px'}).observe(hero);
+
+var seekBusy=false,pendingTime=null;
+function requestSeek(t){
+  if(!video.duration)return;
+  if(seekBusy){pendingTime=t;return}
+  seekBusy=true;video.currentTime=t;
+}
+video.addEventListener('seeked',function(){
+  seekBusy=false;
+  if(pendingTime!==null){var t=pendingTime;pendingTime=null;requestSeek(t)}
+});
+video.addEventListener('error',function(){seekBusy=false;pendingTime=null;failVideo()});
+
+/* ---------- streamed Blob behind an honest ring ---------- */
+var started=false,videoReady=false;
+function startBlobFetch(){if(started)return;started=true;loadHeroBlob().catch(failVideo)}
+function initHeroOnce(){
+  if(initHeroOnce.done)return;initHeroOnce.done=true;
+  posterLayer.style.backgroundImage="url('assets/hero-poster.jpg')";
+  var img=new Image();img.onload=startBlobFetch;img.onerror=startBlobFetch;
+  img.src='assets/hero-poster.jpg';
+  setTimeout(startBlobFetch,4000);
+  loadT0=performance.now();
+  (function ramp(){
+    loadK=clamp((performance.now()-loadT0)/1400,0,1);
+    updateCaptions(shown);
+    if(loadK<1&&!gatesMatch())requestAnimationFrame(ramp);
+  })();
+}
+async function loadHeroBlob(){
+  var ctrl=new AbortController();
+  var watchdog=setTimeout(function(){ctrl.abort()},20000);
+  var res=await fetch(VIDEO_URL,{priority:'low',signal:ctrl.signal});
+  var total=Number(res.headers.get('Content-Length'))||VIDEO_BYTES;
+  var reader=res.body.getReader();
+  var chunks=[],got=0,lastRing=0;
+  for(;;){
+    var r=await reader.read();
+    if(r.done)break;
+    clearTimeout(watchdog);
+    watchdog=setTimeout(function(){ctrl.abort()},20000);
+    chunks.push(r.value);got+=r.value.length;
+    var frac=Math.min(1,got/total),now=performance.now();
+    if(now-lastRing>100||frac===1){lastRing=now;ring.style.setProperty('--ld',Math.round(126*(1-frac)))}
+  }
+  clearTimeout(watchdog);
+  ring.style.setProperty('--ld',0);
+  video.src=URL.createObjectURL(new Blob(chunks,{type:'video/mp4'}));
+  video.load();
+  video.addEventListener('canplay',function(){
+    videoReady=true;
+    requestSeek(heroProgress()*video.duration);
+    stage.classList.add('video-ready');
+    ring.style.opacity=0;
+  },{once:true});
+}
+function makeScrollChevron(){
+  var d=document.createElement('div');d.className='chev';
+  d.innerHTML='<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9l8 8 8-8"/></svg>';
+  return d;
+}
+function failVideo(){
+  if(ring&&ring.parentNode){ring.replaceWith(makeScrollChevron())}
+  stage.classList.add('video-failed');
+  video.style.display='none';
+}
+
+/* ---------- the five gates, armed live, identical to the CSS ---------- */
+var GATES=['(max-width: 720px)','(orientation: portrait) and (max-width: 1024px)','(orientation: portrait) and (pointer: coarse)','(orientation: landscape) and (pointer: coarse) and (max-height: 560px)','(prefers-reduced-motion: reduce)'];
+var MQLS=GATES.map(function(q){return matchMedia(q)});
+function gatesMatch(){return MQLS.some(function(m){return m.matches})}
+var scrubOn=false;
+function enableScrub(){
+  if(scrubOn)return;scrubOn=true;
+  initHeroOnce();
+  addEventListener('scroll',onScroll,{passive:true});
+  bands.forEach(function(b){b.op=-1;b.k=-1});
+  unpinFinalStates();
+  updateCaptions(heroProgress());
+  onScroll();
+}
+function disableScrub(){
+  if(!scrubOn)return;scrubOn=false;
+  removeEventListener('scroll',onScroll);
+  if(rafId!==null){cancelAnimationFrame(rafId);rafId=null}
+}
+function applyHeroMode(){if(gatesMatch()){disableScrub()}else{enableScrub()}}
+MQLS.forEach(function(m){m.addEventListener('change',applyHeroMode)});
+
+/* ---------- reduced motion, live, both directions ---------- */
+function pinToFinalStates(){
+  document.querySelectorAll('.io').forEach(function(el){el.classList.add('in','settled')});
+  document.querySelectorAll('[data-rv]').forEach(function(el){el.classList.add('rv')});
+  pinScrub();
+  document.querySelectorAll('.divider').forEach(function(d){d.classList.add('on','settled')});
+  sizeHoldCanvas();
+  holdComplete(true);
+}
+function unpinFinalStates(){/* scroll drives own the states again; nothing pinned needs undoing beyond caches */}
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',function(e){
+  if(e.matches){pinToFinalStates();pinScrub()}else{applyHeroMode();armScrub();onPageScroll()}
+});
+
+/* ---------- the page scrub driver ----------
+   One rAF pass on scroll. Each [data-scrub] element gets --sp from its own
+   position: 0 as it enters, 1 after half a viewport of travel. Writes are
+   delta-gated; reduced motion never arms this and the CSS fallback of 1
+   keeps every state final. */
+var scrubEls=[].slice.call(document.querySelectorAll('[data-scrub]')).map(function(el){return {el:el,v:-1}});
+var pinSecs=[].slice.call(document.querySelectorAll('.pin-sec')).map(function(el){return {el:el,v:-1}});
+var pinWide=matchMedia('(min-width: 900px)');
+var scrubRaf=null;
+function scrubTick(){
+  scrubRaf=null;
+  var vh=innerHeight;
+  /* elements at the very bottom of the document can never cross the normal
+     trigger point, so completion is forced as the page runs out of scroll */
+  var remaining=document.documentElement.scrollHeight-scrollY-vh;
+  var endBoost=clamp(1-remaining/(vh*0.3),0,1);
+  /* pinned runways: progress through the tall section drives the stage.
+     Narrow screens play the same choreography as a flowing scrub. */
+  for(var j=0;j<pinSecs.length;j++){
+    var ps=pinSecs[j];
+    var pr=ps.el.getBoundingClientRect();
+    if(pr.bottom<-120||pr.top>vh+120)continue;
+    var pp;
+    if(pinWide.matches){
+      pp=clamp(-pr.top/Math.max(pr.height-vh,1),0,1);
+    }else{
+      pp=clamp((vh*0.9 - pr.top)/(vh*0.75),0,1);
+    }
+    pp=Math.max(pp,endBoost);
+    if(Math.abs(pp-ps.v)>0.004){
+      ps.v=pp;
+      ps.el.style.setProperty('--pp',pp.toFixed(4));
+      if(ps.el.id==='work'){
+        var slides=ps.el.querySelectorAll('.slide');
+        var head=pp<.31?0:pp<.55?1:pp<.79?2:3;
+        for(var k2=0;k2<slides.length;k2++){slides[k2].classList.toggle('live',k2===head)}
+      }
+    }
+  }
+  for(var i=0;i<scrubEls.length;i++){
+    var it=scrubEls[i];
+    var r=it.el.getBoundingClientRect();
+    if(r.bottom<-80||r.top>vh+80)continue;
+    var p=clamp((vh*0.92 - r.top)/(vh*0.5),0,1);
+    p=Math.max(p,endBoost);
+    if(Math.abs(p-it.v)>0.006){
+      it.v=p;
+      it.el.style.setProperty('--sp',p.toFixed(3));
+      if(it.el.classList.contains('role--ultra')){
+        it.el.closest('.runway').style.setProperty('--np',p.toFixed(3));
+      }
+    }
+  }
+}
+function onPageScroll(){
+  if(scrubRaf===null){scrubRaf=requestAnimationFrame(scrubTick)}
+}
+var scrubArmed=false;
+function armScrub(){
+  if(scrubArmed)return;scrubArmed=true;
+  addEventListener('scroll',onPageScroll,{passive:true});
+  addEventListener('resize',onPageScroll,{passive:true});
+  scrubTick();
+}
+function pinScrub(){
+  scrubArmed=false;
+  removeEventListener('scroll',onPageScroll);
+  removeEventListener('resize',onPageScroll);
+  scrubEls.forEach(function(it){it.v=1;it.el.style.setProperty('--sp',1)});
+  pinSecs.forEach(function(ps){ps.v=1;ps.el.style.setProperty('--pp',1)});
+  document.querySelectorAll('#work .slide').forEach(function(sl){sl.classList.add('live')});
+  document.querySelectorAll('.runway').forEach(function(r){r.style.setProperty('--np',1)});
+}
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){armScrub()}
+
+/* ---------- entrances with retirement ---------- */
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting){
+      e.target.classList.add('in');
+      setTimeout(function(){e.target.classList.add('settled')},1200);
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.18});
+document.querySelectorAll('.io').forEach(function(el){io.observe(el)});
+
+/* one-shot reveals: a container earns .rv the first time it shows */
+var rvo=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('rv');rvo.unobserve(e.target)}
+  });
+},{threshold:0.18});
+document.querySelectorAll('[data-rv]').forEach(function(el){rvo.observe(el)});
+
+/* separators only between chips that share a line: mark line-enders on layout */
+function markTagWraps(){
+  document.querySelectorAll('.layer .tags').forEach(function(t){
+    var sp=t.querySelectorAll('span');
+    for(var i=0;i<sp.length;i++){
+      var last=i===sp.length-1;
+      sp[i].classList.toggle('eol',!last&&sp[i+1].offsetTop>sp[i].offsetTop+2);
+    }
+  });
+}
+markTagWraps();
+var mtwT;addEventListener('resize',function(){clearTimeout(mtwT);mtwT=setTimeout(markTagWraps,150)});
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(markTagWraps);
+
+/* living elements pause when their section is unseen, and on hidden tabs */
+var alive=new IntersectionObserver(function(es){
+  es.forEach(function(e){e.target.classList.toggle('alive',e.isIntersecting)});
+},{threshold:0.05});
+document.querySelectorAll('section').forEach(function(s){alive.observe(s)});
+alive.observe(document.querySelector('footer'));
+document.addEventListener('visibilitychange',function(){
+  document.body.classList.toggle('paused',document.hidden);
+});
+
+/* ---------- the carrier line: seeded signal bars, one-shot playhead sweep ----------
+   The divider sweep fires at ratio .35, before the next section's io at .18,
+   so the line always announces the section it precedes. */
+function buildBars(host,heights,peaks){
+  host.textContent='';
+  for(var i=0;i<heights.length;i++){
+    var b=document.createElement('span');
+    b.className='bar'+(peaks&&peaks[i]?' peak':'');
+    b.style.height=heights[i]+'px';
+    b.style.transitionDelay=(i*8)+'ms';
+    host.appendChild(b);
+  }
+}
+function envHeights(kind,n,seed){
+  var R=rng(seed),h=[],peaks=[],centers,i,t,v,g;
+  if(kind==='speech'){centers=[0.18,0.38,0.62,0.82]}
+  for(i=0;i<n;i++){
+    t=n>1?i/(n-1):0;
+    if(kind==='pulse'){
+      v=3+30*Math.exp(-Math.pow((t-0.5)/0.07,2))*(0.5+0.5*R());
+    }else if(kind==='speech'){
+      v=2;
+      for(g=0;g<4;g++){v+=(22+8*R())*Math.exp(-Math.pow((t-centers[g])/(0.04+0.02*R()),2))}
+    }else{
+      v=4+7*R();
+      if(i%11===0){v+=10;peaks[i]=true}
+    }
+    if(kind!=='hum'&&i%9===0&&R()>0.4){peaks[i]=true}
+    h.push(Math.round(v));
+  }
+  return {h:h,peaks:peaks};
+}
+function buildDividers(){
+  document.querySelectorAll('.divider').forEach(function(d,di){
+    var n=Math.max(40,Math.floor(innerWidth/9));
+    var env=envHeights(d.dataset.env||'hum',n,3000+di*97);
+    buildBars(d,env.h,env.peaks);
+    if(d.classList.contains('on')){d.classList.add('settled')}
+  });
+}
+buildDividers();
+var divResizeT=null;
+addEventListener('resize',function(){
+  clearTimeout(divResizeT);divResizeT=setTimeout(buildDividers,180);
+},{passive:true});
+var thresholds=[0,0.2,0.35,0.5];
+var drawIo=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+    if(e.intersectionRatio>0.35&&!e.target.classList.contains('on')){
+      e.target.classList.add('on');
+      var n=e.target.children.length;
+      setTimeout(function(){e.target.classList.add('settled');
+        [].forEach.call(e.target.children,function(b){b.style.transitionDelay='0ms'});
+      },n*8+600);
+      drawIo.unobserve(e.target);
+    }
+  });
+},{threshold:thresholds});
+document.querySelectorAll('.divider').forEach(function(d){drawIo.observe(d)});
+/* ---------- the answer strip: the line that takes your call ---------- */
+(function(){
+  var strip=document.querySelector('.line-bars');
+  if(!strip)return;
+  var n=48,R=rng(4242),i;
+  for(i=0;i<n;i++){
+    var rest=4+Math.round(R()*8);
+    var b=document.createElement('span');
+    b.style.height=rest+'px';
+    b.style.setProperty('--k',Math.min(26,rest*2.2)/rest);
+    b.style.transitionDelay=(i*12)+'ms';
+    strip.appendChild(b);
+  }
+})();
+
+/* ---------- the one interactive moment: Barge in ---------- */
+var holdBtn=document.getElementById('holdBtn');
+var holdCv=document.getElementById('holdWave');
+var holdState=document.getElementById('holdState');
+var uvCard=document.getElementById('uvCard');
+var hg=holdCv.getContext('2d');
+var holdP=0,holding=false,holdRaf=null,holdDone=false,htime=0;
+function sizeHoldCanvas(){
+  var r=holdCv.getBoundingClientRect();
+  if(r.width<2)return;
+  var d=Math.min(2,window.devicePixelRatio||1);
+  holdCv.width=Math.max(1,Math.round(r.width*d));
+  holdCv.height=Math.max(1,Math.round(r.height*d));
+  holdCv._d=d;
+  drawHold(0);
+}
+var holdResizeRaf=null;
+addEventListener('resize',function(){
+  if(holdResizeRaf)return;
+  holdResizeRaf=requestAnimationFrame(function(){holdResizeRaf=null;sizeHoldCanvas()});
+},{passive:true});
+function holdComplete(instant){
+  if(holdDone)return;holdDone=true;holdP=1;
+  if(uvCard)uvCard.classList.add('lit');
+  holdState.textContent='Complete. The agent yielded the line.';
+  if(!instant)drawHold(0.016);
+}
+function drawHold(dt){
+  htime+=dt;
+  var w=holdCv.width,h=holdCv.height,mid=h/2;
+  hg.lineWidth=2*(holdCv._d||1);
+  hg.clearRect(0,0,w,h);
+  /* the agent's voice ducks as you hold; your wave rises */
+  var agentAmp=(1-holdP*0.85)*h*0.26;
+  var youAmp=holdP*h*0.3;
+  hg.strokeStyle='rgba(147,167,184,0.75)';
+  hg.beginPath();
+  for(var x=0;x<=w;x+=4){
+    var y=mid+Math.sin(x*0.045+htime*3.1)*agentAmp*(0.55+0.45*Math.sin(x*0.011-htime*1.7));
+    x===0?hg.moveTo(x,y):hg.lineTo(x,y);
+  }
+  hg.stroke();
+  hg.strokeStyle='#4FE3C1';
+  hg.beginPath();
+  for(x=0;x<=w;x+=4){
+    y=mid+Math.sin(x*0.06-htime*4.4)*youAmp*(0.5+0.5*Math.sin(x*0.017+htime*2.2));
+    x===0?hg.moveTo(x,y):hg.lineTo(x,y);
+  }
+  hg.stroke();
+}
+function holdLoop(){
+  holdRaf=requestAnimationFrame(holdLoop);
+  var dt=0.016;
+  if(holding){holdP=clamp(holdP+dt/1.6,0,1);if(holdP>=1)holdComplete(false)}
+  else if(!holdDone){holdP=clamp(holdP-dt/1.1,0,1)}
+  drawHold(dt);
+  if(!holding&&!holdDone&&holdP===0&&htime>2){cancelAnimationFrame(holdRaf);holdRaf=null}
+}
+function startHoldLoop(){if(holdRaf===null){holdRaf=requestAnimationFrame(holdLoop)}}
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){
+  sizeHoldCanvas();holdComplete(true);
+}else{
+  holdBtn.addEventListener('pointerdown',function(e){e.preventDefault();holding=true;holdState.textContent='Holding. Keep holding to take the line.';startHoldLoop()});
+  addEventListener('pointerup',function(){holding=false;if(!holdDone){holdState.textContent='Released early. The agent resumed.'}});
+  holdBtn.addEventListener('keydown',function(e){if((e.key===' '||e.key==='Enter')&&!e.repeat){e.preventDefault();holding=true;startHoldLoop()}});
+  holdBtn.addEventListener('keyup',function(){holding=false});
+  sizeHoldCanvas();
+}
+
+/* ---------- the environment layer: one world behind the page ---------- */
+var env=document.getElementById('env');
+var eg=env.getContext('2d');
+var motes=[];
+(function(){
+  var R=rng(20260819);
+  for(var i=0;i<70;i++){
+    var near=i>=45;
+    motes.push({x:R(),y:R(),
+      r:near?1.4+R()*0.8:0.5+R()*0.6,
+      s:0.00006+R()*0.00016,p:R()*6.283,
+      near:near,cap:near?0.34:0.18,col:near?'#3E7A76':'#2E5B60'});
+  }
+})();
+var contactEl=null,contactK=0;
+var envRaf=null,envLast=0,envDpr=1;
+function envTick(now){
+  envRaf=requestAnimationFrame(envTick);
+  if(now-envLast<66)return;envLast=now;   /* 15fps is a whisper, not a show */
+  if(document.hidden)return;
+  var w=env.width,h=env.height;
+  var sy=scrollY;
+  if(!contactEl)contactEl=document.getElementById('contact');
+  if(contactEl){
+    var ck=clamp(1-contactEl.getBoundingClientRect().top/innerHeight,0,1);
+    if(Math.abs(ck-contactK)>0.01)contactK=ck;
+  }
+  eg.clearRect(0,0,w,h);
+  /* the void warms as you approach the ask, echoing the film's horizon */
+  if(contactK>0){
+    var gr=eg.createRadialGradient(w/2,h*1.05,0,w/2,h*1.05,h*0.7);
+    gr.addColorStop(0,'rgba(79,227,193,'+(0.055*contactK).toFixed(3)+')');
+    gr.addColorStop(1,'rgba(79,227,193,0)');
+    eg.fillStyle=gr;eg.fillRect(0,0,w,h);
+  }
+  for(var i=0;i<motes.length;i++){
+    var m=motes[i];
+    var f=m.near?0.045:0.018;
+    var y=(((m.y+now*m.s-sy*f/innerHeight)%1)+1)%1;
+    var tw=Math.min(m.cap,(0.25+0.35*Math.abs(Math.sin(now*0.0004+m.p)))*m.cap*2.2);
+    eg.globalAlpha=tw;
+    eg.fillStyle=m.col;
+    eg.beginPath();eg.arc(m.x*w,y*h,m.r*envDpr,0,6.283);eg.fill();
+  }
+  eg.globalAlpha=1;
+}
+function sizeEnv(){
+  envDpr=Math.min(2,window.devicePixelRatio||1);
+  env.width=Math.round(innerWidth*envDpr);
+  env.height=Math.round(innerHeight*envDpr);
+}
+sizeEnv();addEventListener('resize',sizeEnv,{passive:true});
+if(!matchMedia('(prefers-reduced-motion: reduce)').matches){envRaf=requestAnimationFrame(envTick)}
+else{sizeEnv();envTick(0);cancelAnimationFrame(envRaf)}
+
+/* ---------- boot ---------- */
+if(matchMedia('(prefers-reduced-motion: reduce)').matches){pinToFinalStates()}
+applyHeroMode();
+})();
+</script>
+</body>
 </html>
