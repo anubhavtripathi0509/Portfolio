@@ -632,6 +632,35 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
   .divider .bar{transform:scaleY(1)}
   .io.in .nowline{opacity:.55}
 }
+
+/* Phones: the cinematic negative space compresses. Desktop breathes with the
+   pin runways; a phone showing the same paddings reads as dead screens. */
+@media (max-width:899px){
+  section{--pt:64px;--pb:64px}
+  #about{--pt:88px}
+  #work{--pb:72px}
+  #skills{--pb:56px}
+  #wins{--pt:72px;--pb:48px}
+  #education{--pt:0px;--pb:64px}
+  #contact{--pt:88px;--pb:64px}
+  .pin-stage{padding-top:0;padding-bottom:0}
+  .divider{height:40px}
+  footer{padding-top:56px}
+  .foot-row{margin-top:44px}
+  .cta-row{margin-top:32px}
+  .wins-spread{margin-top:20px}
+  .runway{margin-top:18px}
+  /* the desktop playback furniture stays on the desktop */
+  .playhead,.nowline,.nowdot{display:none}
+  /* kicker above the title, both flush left */
+  .stack-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .stack-head h2{text-align:left;margin-left:0}
+  /* on phones all four stack groups are the same plain list */
+  .layer.base{border-radius:0;background:none;margin-inline:0;padding:clamp(12px,2.2vh,22px) 0 clamp(14px,2.8vh,28px);border-top:1px solid var(--line)}
+  .layer.base::after{display:none}
+  /* company always sits under the role title, every card alike */
+  .role .top{flex-direction:column;align-items:flex-start;gap:2px}
+}
 </style>
 </head>
 <body>
